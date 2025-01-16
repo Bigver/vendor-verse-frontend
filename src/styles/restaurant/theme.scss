@@ -1,0 +1,532 @@
+.theme-dark {
+    background-color: rgb(27, 27, 27);
+    color: white;
+    .navbar-restaurant-2 {
+        background-color: #000000;
+        p {
+            font-weight: normal;
+            text-decoration: none;
+            color: black;
+            font-size: 0.5rem;
+            text-align: center;
+        }
+        &:hover {
+            .active {
+                color: #ffffff;
+                p {
+                    color: #ffffff;
+                }
+            }
+        }
+        .list {
+            color: #a5a2a2;
+            p {
+                color: #a5a2a2;
+            }
+        }
+        .list:hover {
+            p {
+                color: #ffffff;
+            }
+            color: #ffffff;
+        }
+        .active {
+            p {
+                color: #ffffff;
+            }
+            color: #ffffff;
+        }
+    }
+    .icon {
+        color: rgb(255, 255, 255);
+    }
+    button {
+        background-color: #fdfdfd;
+        color: #000000;
+    }
+    .search-ctn {
+        .search {
+            border: 0px;
+        }
+    }
+    .cart-ctn2 {
+        .header-cart {
+            color: rgb(255, 255, 255);
+        }
+        .text {
+            .btn {
+                button {
+                    background-color: rgb(22, 14, 14);
+                }
+            }
+            h3 {
+                background-color: rgb(22, 14, 14);
+            }
+        }
+    }
+    .home-ctn-4 {
+        .active {
+            background-color: rgb(0, 0, 0);
+        }
+    }
+    .template-3-restaurant {
+        .header {
+            .text {
+                h3 {
+                    color: rgb(255, 255, 255);
+                }
+                h1 {
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+        .active {
+            background-color: rgb(14, 12, 11);
+        }
+    }
+    .quantity {
+        button {
+            color: rgb(243, 243, 243);
+        }
+    }
+    .total-price {
+        .text-ctn {
+            background-color: rgb(20, 16, 16);
+            u {
+                background-color: rgb(139, 138, 138);
+            }
+        }
+        .check-out {
+            background-color: rgb(20, 16, 16);
+            button {
+                background-color: white;
+                border: 0;
+                color: rgb(0, 0, 0);
+                font-weight: bolder;
+            }
+        }
+    }
+    .add-to-cart {
+        background-color: rgb(3, 3, 3);
+        border: 0px;
+    }
+    .home-ctn-5 {
+        .card {
+            background-color: rgb(241, 238, 238);
+        }
+    }
+    .show-image {
+        button {
+            background-color: rgb(27, 27, 27);
+        }
+    }
+}
+
+.theme-light {
+    background-color: #fdfbfb;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(207, 207, 207);
+    .navbar-restaurant-2 {
+        background-color: #ffffff;
+        p {
+            font-weight: normal;
+            text-decoration: none;
+            color: black;
+            font-size: 0.5rem;
+            text-align: center;
+        }
+        &:hover {
+            .active {
+                color: black;
+                p {
+                    color: black;
+                }
+            }
+        }
+        .list {
+            color: #a5a2a2;
+            p {
+                color: #a5a2a2;
+            }
+        }
+        .list:hover {
+            p {
+                color: black;
+            }
+            color: black;
+        }
+        .active {
+            p {
+                color: black;
+            }
+            color: black;
+        }
+    }
+    .cart-ctn2 {
+        .header-cart {
+            color: rgb(3, 3, 2);
+        }
+        .text {
+            h3 {
+                background-color: rgb(20, 16, 12);
+            }
+        }
+    }
+    .cart-ctn3 {
+        .header-cart {
+            color: rgb(3, 3, 2);
+        }
+        .check-out {
+            .btn-1 {
+                button {
+                    color: rgb(255, 255, 255);
+                    background-color: rgb(20, 16, 12);
+                    font-weight: bolder;
+                    border: 1px solid rgb(99, 99, 99);
+                }
+            }
+            background-color: rgb(22, 17, 13);
+        }
+    }
+    .home-ctn-4 {
+        .active {
+            background-color: rgb(14, 12, 11);
+        }
+    }
+    .template-3-restaurant {
+        .header {
+            .text {
+                h3 {
+                    color: rgb(14, 12, 11);
+                }
+                h1 {
+                    color: rgb(14, 12, 11);
+                }
+            }
+        }
+        .active {
+            background-color: rgb(14, 12, 11);
+        }
+    }
+    .icon {
+        color: black;
+    }
+    button {
+        background-color: #020202;
+        color: white;
+    }
+    .quantity {
+        button {
+            color: rgb(7, 5, 5);
+        }
+    }
+    .total-price {
+        .text-ctn {
+            background-color: rgb(240, 240, 240);
+            u {
+                background-color: rgb(139, 138, 138);
+            }
+        }
+        .check-out {
+            background-color: rgb(240, 240, 240);
+        }
+    }
+    .add-to-cart {
+        background-color: white;
+        border: 0px;
+        h1 {
+            color: rgb(8, 7, 6);
+        }
+        a {
+            background-color: rgb(14, 10, 6);
+        }
+    }
+    .show-image {
+        button {
+            background-color: #fdfbfb;
+        }
+    }
+}
+
+.theme-orange {
+    background-color: #fdfbfb;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(207, 207, 207);
+    .navbar-restaurant-2 {
+        background-color: #ffffff;
+        p {
+            font-weight: normal;
+            text-decoration: none;
+            color: rgb(226, 124, 28);
+            font-size: 0.5rem;
+            text-align: center;
+        }
+        &:hover {
+            .active {
+                color: rgb(226, 124, 28);
+                p {
+                    color: rgb(226, 124, 28);
+                }
+            }
+        }
+        .list {
+            color: #a5a2a2;
+            p {
+                color: #a5a2a2;
+            }
+        }
+        .list:hover {
+            p {
+                color: rgb(226, 124, 28);
+            }
+            color: rgb(226, 124, 28);
+        }
+        .active {
+            p {
+                color: rgb(226, 124, 28);
+            }
+            color: rgb(226, 124, 28);
+        }
+    }
+    .cart-ctn2 {
+        .header-cart {
+            color: rgb(226, 124, 28);
+        }
+        .text {
+            h3 {
+                background-color: rgb(226, 124, 28);
+            }
+        }
+    }
+    .cart-ctn3 {
+        .header-cart {
+            color: rgb(226, 124, 28);
+        }
+        .check-out {
+            .btn-1 {
+                button {
+                    color: rgb(226, 124, 28);
+                    background-color: white;
+                    font-weight: bolder;
+                    border: 0px;
+                }
+            }
+            background-color: rgb(226, 124, 28);
+        }
+    }
+    .home-ctn-4 {
+        .active {
+            background-color: rgb(226, 124, 28);
+        }
+    }
+    .template-3-restaurant {
+        .header {
+            .text {
+                h3 {
+                    color: rgb(226, 124, 28);
+                }
+                h1 {
+                    color: rgb(226, 124, 28);
+                }
+            }
+        }
+        .active {
+            background-color: rgb(226, 124, 28);
+        }
+    }
+    .cart-ctn {
+        span {
+            background-color: rgb(226, 124, 28);
+        }
+    }
+    .icon {
+        color: rgb(226, 124, 28);
+    }
+    button {
+        background-color: rgb(226, 124, 28);
+        color: white;
+    }
+    .quantity {
+        button {
+            color: rgb(7, 5, 5);
+        }
+    }
+    .total-price {
+        .text-ctn {
+            background-color: rgb(226, 124, 28);
+            color: white;
+            u {
+                background-color: rgb(255, 248, 248);
+            }
+        }
+        .check-out {
+            color: white;
+            background-color: rgb(226, 124, 28);
+            button {
+                background-color: white;
+                border: 0;
+                color: rgb(226, 124, 28);
+                font-weight: bolder;
+            }
+        }
+    }
+    .add-to-cart {
+        background-color: white;
+        border: 0px;
+        h1 {
+            color: rgb(212, 99, 24);
+        }
+        a {
+            background-color: rgb(226, 124, 28);
+        }
+    }
+    .show-image {
+        button {
+            background-color: #fdfbfb;
+        }
+    }
+}
+
+.theme-green {
+    background-color: #fdfbfb;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(207, 207, 207);
+    .navbar-restaurant-2 {
+        background-color: #ffffff;
+        p {
+            font-weight: normal;
+            text-decoration: none;
+            color: #05ec2c;
+            font-size: 0.5rem;
+            text-align: center;
+        }
+        &:hover {
+            .active {
+                color: #05ec2c;
+                p {
+                    color: #05ec2c;
+                }
+            }
+        }
+        .list {
+            color: #a5a2a2;
+            p {
+                color: #a5a2a2;
+            }
+        }
+        .list:hover {
+            p {
+                color: #05ec2c;
+            }
+            color: #05ec2c;
+        }
+        .active {
+            p {
+                color: #05ec2c;
+            }
+            color: #05ec2c;
+        }
+    }
+    .cart-ctn2 {
+        .header-cart {
+            color: #05ec2c;
+        }
+        .text {
+            h3 {
+                background-color: #05ec2c;
+            }
+        }
+    }
+    .cart-ctn3 {
+        .header-cart {
+            color: #05ec2c;
+        }
+        .check-out {
+            .btn-1 {
+                button {
+                    color: #05ec2c;
+                    background-color: white;
+                    font-weight: bolder;
+                    border: 0px;
+                }
+            }
+            background-color: #05ec2c;
+        }
+    }
+    .home-ctn-4 {
+        .active {
+            background-color: #05ec2c;
+        }
+    }
+    .home-ctn-4 {
+        .active {
+            background-color: #05ec2c;
+        }
+    }
+    .template-3-restaurant {
+        .header {
+            .text {
+                h3 {
+                    color: #05ec2c;
+                }
+                h1 {
+                    color: #05ec2c;
+                }
+            }
+        }
+        .active {
+            background-color: #05ec2c;
+        }
+    }
+    .cart-ctn {
+        span {
+            background-color: #05ec2c;
+        }
+    }
+    .icon {
+        color: #05ec2c;
+    }
+    button {
+        background-color: #05ec2c;
+        color: white;
+    }
+    .quantity {
+        button {
+            color: rgb(7, 5, 5);
+        }
+    }
+    .total-price {
+        .text-ctn {
+            background-color: #05ec2c;
+            color: white;
+            u {
+                background-color: rgb(255, 248, 248);
+            }
+        }
+        .check-out {
+            color: white;
+            background-color: #05ec2c;
+            button {
+                background-color: white;
+                border: 0;
+                color: #05ec2c;
+                font-weight: bolder;
+            }
+        }
+    }
+    .add-to-cart {
+        background-color: white;
+        border: 0px;
+        h1 {
+            color: #05ec2c;
+        }
+        a {
+            background-color: #05ec2c;
+        }
+    }
+    .show-image {
+        button {
+            background-color: #fdfbfb;
+        }
+    }
+}

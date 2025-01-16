@@ -1,0 +1,50 @@
+.menus-ctn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    gap: 1.5rem;
+    min-height: 30vh;
+    .menu-card{
+        scale: 0.9;
+        transition: 1s;
+        background-color: #f0efef;
+        border-radius: 10px;
+        .img{
+            width: 160px;
+            height: 150px;
+            img{
+                border-radius: 10px 10px 0px 0px;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .text{
+            margin-top: 5%;
+            text-align: start;
+            display: grid;
+            gap: 1rem;
+            padding: 10px;
+            h1{
+                font-size: 1rem;
+                color: #5c5959;
+                font-weight: normal;
+            }
+            .plus{
+                display: flex;
+                justify-content: space-between;
+            }
+            p{
+                font-weight: bolder;
+                font-size: 1rem;
+            }
+        }
+    }
+    .menu-card:hover{
+        scale: 1;
+    }
+    
+   
+}

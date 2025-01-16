@@ -1,0 +1,53 @@
+.search-ctn{
+    display: grid;
+    .search{
+        border: 1px solid rgb(184, 177, 177);
+        display: flex;
+        height: 70px;
+        align-items: center;
+        input{
+            margin-left: 5%;
+            padding: 7px;
+            border: 0px;
+            width: 70%;
+            font-size: 1.1rem;
+            border-radius: 5px;
+        }
+        input:hover{
+            border: 0px;
+        }
+    }
+    .container {
+        margin-top: 10%;
+        display: flex;
+        overflow-x: auto; /* เพิ่ม horizontal scroll */
+        white-space: nowrap; /* ป้องกันการแยกบรรทัด */
+        max-width: 100%; /* หรือกำหนดขนาดตามที่ต้องการ */
+        margin-left: 3%;
+        gap: 1rem;
+    }
+    .item {
+        flex: 0 0 auto; /* ป้องกันไม่ให้ flex item ยืด */
+        width: 110px; /* กำหนดขนาดให้ item */
+        text-align: center;
+        gap: 2rem;
+        border: 1px solid rgb(179, 173, 173);
+        padding: 5px;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        a{
+            font-size: 0.8rem;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+     
+    }
+    .active{
+        border-bottom: 1px solid rgb(182, 43, 8);
+        background-color: rgb(182, 43, 8);
+        a{
+            color: rgb(255, 255, 255);
+            font-weight: bolder;
+        }
+    }
+}

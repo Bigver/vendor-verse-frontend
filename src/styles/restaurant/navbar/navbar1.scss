@@ -1,0 +1,38 @@
+.navbar-restaurant-1{
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+        margin-left: 5%;
+        img{
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .cart-ctn {
+        .cart{
+            margin-right: 25px;
+        }
+        cursor: pointer;
+        display: flex;
+        a {
+            position: relative;
+            scale: 0.9;
+            transition: 1s;
+            color: black;
+        }
+        a:hover {
+            scale: 1;
+        }
+        span {
+            font-size: 1rem;
+            position: absolute;
+            width: 20px;
+            color: white;
+            text-align: center;
+            border-radius: 50%;
+            left: 28px;
+        }
+    }
+}

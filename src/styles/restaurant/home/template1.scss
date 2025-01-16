@@ -1,0 +1,89 @@
+.home-ctn-4 {
+    position: relative;
+    .container {
+        display: flex;
+        overflow-x: auto; /* เพิ่ม horizontal scroll */
+        white-space: nowrap; /* ป้องกันการแยกบรรทัด */
+        max-width: 100%; /* หรือกำหนดขนาดตามที่ต้องการ */
+        margin-left: 3%;
+        gap: 1rem;
+    }
+    .item {
+        flex: 0 0 auto; /* ป้องกันไม่ให้ flex item ยืด */
+        width: 80px; /* กำหนดขนาดให้ item */
+        text-align: center;
+        gap: 2rem;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        img {
+            width: 60px;
+        }
+    }
+
+    .container2 {
+        display: flex;
+        overflow-x: auto; /* เพิ่ม horizontal scroll */
+        white-space: nowrap; /* ป้องกันการแยกบรรทัด */
+        max-width: 100%; /* หรือกำหนดขนาดตามที่ต้องการ */
+        margin-left: 2%;
+        gap: 1rem;
+        padding-bottom: 20px;        
+    }
+    .item2 {
+        display: grid;
+        flex: 0 0 auto; /* ป้องกันไม่ให้ flex item ยืด */
+        width: 80px; /* กำหนดขนาดให้ item */
+        text-align: center;
+        justify-content: center;
+        gap: 2rem;
+        padding: 8px;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        .img{
+            height: 28px;
+        }
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .active {
+        a {
+            color: rgb(255, 255, 255);
+            font-weight: bolder;
+        }
+    }
+    a {
+        font-size: 0.8rem;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .show-image {
+        display: flex;
+        padding-bottom: 50px;
+        justify-content: space-around;
+        max-width: 450px;
+        button {
+            border: 0px;
+        }
+        img {
+            width: 60vh;
+            max-width: 450px;
+            height: 50vh;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+    }
+    @media only screen and (max-width: 500px) {
+        .show-image {
+            padding-top: 30px;
+            img {
+                width: 85%;
+                height: 50vh;
+                object-fit: cover;
+            }
+        }
+    }
+}

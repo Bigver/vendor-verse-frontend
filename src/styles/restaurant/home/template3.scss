@@ -1,0 +1,94 @@
+.template-3-restaurant {
+    position: relative;
+    .header{
+        height: 30vh;
+        width: 100%;
+        padding: 20px;
+        display: grid;
+        text-align: start;
+
+        h1{
+            font-weight: bolder;
+            letter-spacing: 1px;
+        }
+        .search{
+            display: flex;
+            width: 100%;
+            input{
+                width: 75%;
+                border: 1px solid rgb(184, 181, 181);
+                height: 30px;
+                padding: 9px;
+                font-size: 1rem;
+                border-radius: 20px;
+            }
+            button{
+                height: 50px;
+                margin-left: 10px;
+                display: grid;
+                justify-content: center;
+                width: 50px;
+                align-items: center;
+                background-color: transparent;
+                border: 0;
+            }
+        }
+    }
+    .container {
+        display: flex;
+        overflow-x: auto; /* เพิ่ม horizontal scroll */
+        white-space: nowrap; /* ป้องกันการแยกบรรทัด */
+        max-width: 100%; /* หรือกำหนดขนาดตามที่ต้องการ */
+        margin-left: 3%;
+        gap: 1rem;
+    }
+    .item {
+        flex: 0 0 auto; /* ป้องกันไม่ให้ flex item ยืด */
+        width: 80px; /* กำหนดขนาดให้ item */
+        text-align: center;
+        gap: 2rem;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+     
+    }
+    .container2 {
+        display: flex;
+        overflow-x: auto; /* เพิ่ม horizontal scroll */
+        white-space: nowrap; /* ป้องกันการแยกบรรทัด */
+        max-width: 100%; /* หรือกำหนดขนาดตามที่ต้องการ */
+        margin-left: 3%;
+        gap: 1rem;
+        padding-bottom: 20px;        
+    }
+    .item2 {
+        display: grid;
+        flex: 0 0 auto; /* ป้องกันไม่ให้ flex item ยืด */
+        width: 80px; /* กำหนดขนาดให้ item */
+        text-align: center;
+        justify-content: center;
+        gap: 2rem;
+        padding: 8px;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        .img{
+            height: 28px;
+        }
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .active{
+        a{
+            color: rgb(255, 255, 255);
+            font-weight: bolder;
+        }
+    }
+    a{
+        font-size: 0.8rem;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
