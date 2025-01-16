@@ -1,15 +1,15 @@
-@import './footer.scss';
-@import './home/template1.scss';
-@import './home/template2.scss';
-@import './home/template3.scss';
-@import './menus';
-@import './menus2';
-@import './menu';
-@import './cart';
-@import './checkout';
-@import './theme.scss';
-@import './navbar/navbar1.scss';
-@import './navbar/navbar2.scss';
+@use './footer.scss';
+@use './home/template1.scss';
+@use './home/template2.scss';
+@use './home/template3.scss';
+@use './menus';
+@use './menus2';
+@use './menu';
+@use './cart';
+@use './checkout';
+@use './theme.scss';
+@use './navbar/navbar1.scss';
+@use './navbar/navbar2.scss';
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
 .body-restaurant{
     max-width: 500px;

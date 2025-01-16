@@ -10,10 +10,17 @@
     width: 100%;
     @media (max-width: 768px) {
       margin-left: 0px;
-      margin-top: 50px;
+      max-width: 100%;
+      width: 100%;
+      .title {
+        h1 {
+          margin-top: 50px;
+        }
+      }
     }
     .title {
       h1 {
+        margin-top: 50px;
         display: flex;
         align-items: center;
         font-size: 0.8rem;
@@ -30,8 +37,11 @@
         display: grid;
         text-align: start;
         gap: 1rem;
-
         padding-bottom: 50px;
+        .vdo{
+          margin: auto;
+          max-width: 600px;
+        }
         .img {
           max-width: 800px;
           margin: auto;

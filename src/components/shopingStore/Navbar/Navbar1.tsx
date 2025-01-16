@@ -23,10 +23,10 @@ const Navbar1: React.FC<ContentProps> = ({ logo, category, link, color, backgrou
     <div className="navbar-ctn-1" style={{ background: background }}>
       <div className="logo">
         {logo ?
-          <Link to={`/store/${link}/homepage`} className="link">
+          <Link to={`/store/${link}/homepage`} className="link_logo">
             <img src={logo} alt="" />
           </Link> :
-          <Link to={`/store/${link}/homepage`} className="link">
+          <Link to={`/store/${link}/homepage`} className="link_logo">
             <h2 style={{color : color}}>LOGO</h2>
           </Link>}
 

@@ -19,12 +19,13 @@ const StoreFeature = () => {
         <section id="store">
             <div className="text-1" id="feature-store">
                 <h1>เริ่มต้นการใช้งานเว็บไซต์ร้านค้าออนไลน์</h1>
-                <div style={{ maxWidth: "700px", padding : "30px" , margin : "auto" }}>
+                <div className="vdo">
                     <ReactPlayer
                         url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                         controls
-                        width="430px"
+                        width="100%"
                         height="300px"
+                        className="vdo-clip"
                     />
                 </div>
                 <p>เมื่อสมัครการใช้งานแพ็กเกจเสร็จสิ้น เราสามารถจัดการเว็บไซต์ร้านค้า และ เข้าสู่หน้าเว็บไซต์ได้ที่หน้าจัดการเว็บไซต์</p>

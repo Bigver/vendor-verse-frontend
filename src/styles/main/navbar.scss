@@ -65,10 +65,10 @@
     }
     .content-2 {
         margin-right: 7%;
+        position: relative;
         @media only screen and (max-width: 800px) {
             display: none;
         }
-        position: relative;
         .dropdown {
             display: grid;
             position: absolute;
@@ -131,6 +131,7 @@
     width: 100%;
     z-index: 1;
     box-shadow: rgba(9, 12, 17, 0.24) 0px 3px 8px;
+
     @media only screen and (max-width: 500px) {
         height: 75px;
         backdrop-filter: blur(0px);

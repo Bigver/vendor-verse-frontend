@@ -33,7 +33,7 @@
                 width: 200px;
                 height: 200px;
                 object-fit: cover;
-                border: 2px solid #d8d7d7;
+                // border: 2px solid #d8d7d7;
                 border-radius: 15px;
             }
             .text {
@@ -142,6 +142,8 @@
       
         .product{
             .card{
+                margin-left: 0px;
+
                 .text{
                     margin-top: 30px;
                     h1{
