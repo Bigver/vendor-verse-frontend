@@ -1,0 +1,148 @@
+.login-ctn {
+    display: flex;
+    background: rgb(250, 249, 249);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    .card {
+        margin-top: 5%;
+        background-color: rgb(255, 255, 255);
+        height: 70vh;
+        width: 110vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        box-shadow: rgba(23, 30, 59, 0.35) 0px 5px 15px;
+        a{
+            text-decoration: none;
+            color: #09325c;
+        }
+        .login {
+            color: rgb(0, 0, 0);
+            display: grid;
+            justify-content: center;
+            .header {
+                padding-top: 30px;
+                display: block;
+                text-align: center;
+                width: 100%;
+                h1 {
+                    font-weight: bolder;
+                    font-size: 5vh;
+                    letter-spacing: 2px;
+                }
+                .contact {
+                    width: 100%;
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: center;
+                    gap: 1rem;
+                    .circle {
+                        width: 50px;
+                        height: 50px;
+                        border: 1px solid rgb(170, 167, 167);
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                    }
+                }
+                h4 {
+                    margin-top: 20px;
+                    font-weight: normal;
+                    font-size: 2vh;
+                }
+            }
+            .form {
+                .form-register {
+                    input {
+                        height: 20px;
+                    }
+                }
+                form {
+                    display: grid;
+                    gap: 1.5rem;
+                    input {
+                        width: 300px;
+                        height: 35px;
+                        padding: 10px;
+                        border: 1px solid rgb(189, 186, 186);
+                        @media only screen and (max-width: 500px) {
+                            padding: 5px;
+                        }
+                    }
+                    button {
+                        cursor: pointer;
+                        background-color: #8ec5fc;
+                        border: 0px;
+                        color: white;
+                        height: 40px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+        .register {
+            background-color: #8bc6ec;
+            background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            img {
+                width: 350px;
+            }
+            .text {
+                max-width: 100%;
+                margin: auto;
+                color: white;
+                h1 {
+                    font-weight: bolder;
+                    font-size: 4vh;
+                }
+                p {
+                    font-size: 2vh;
+                    font-weight: normal;
+                }
+                .link {
+                    margin-top: 30px;
+                    a {
+                        border: 1px solid rgb(240, 237, 237);
+                        color: white;
+                        height: 40px;
+                        text-decoration: none;
+                        border-radius: 20px;
+                        padding: 16px;
+                        transition: 1s;
+                    }
+                    a:hover {
+                        background-color: #2040cc;
+                        color: white;
+                        border: 0px;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 500px) {
+        .card{
+            display: grid;
+            grid-template-columns: repeat(1 , 1fr);
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .register {
+            display: none;
+            position: absolute;
+
+            .text{
+                display: none;
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,243 @@
+.navbar-ctn {
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(40px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    .ham {
+        position: fixed;
+        width: 250px;
+        text-align: center;
+        border: 1px solid rgb(201, 201, 201);
+        right: 0;
+        top: 0;
+        background-color: rgb(253, 253, 253);
+        height: 100vh;
+        z-index: 3;
+        transition: transform 3s ease;
+        opacity: 0;
+        transform: translateX(250px);
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid rgb(206, 203, 203);
+        display: none;
+        .link {
+            ul {
+                display: grid;
+                align-items: center;
+                text-align: start;
+            }
+        }
+    }
+    .ham.show {
+        opacity: 0.9;
+        display: grid;
+        transform: translateX(0px);
+    }
+    @media only screen and (max-width: 500px) {
+        height: 75px;
+        backdrop-filter: blur(0px);
+    }
+    box-shadow: rgba(9, 12, 17, 0.24) 0px 3px 8px;
+    .content-1 {
+        display: flex;
+        gap: 2rem;
+        margin-left: 5%;
+        .logo {
+            a {
+                text-decoration: none;
+                font-weight: bolder;
+                font-size: 3vh;
+                color: black;
+                img {
+                    width: 100px;
+                    height: 100px;
+                    @media only screen and (max-width: 500px) {
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+            }
+        }
+    }
+    .content-2 {
+        margin-right: 7%;
+        @media only screen and (max-width: 800px) {
+            display: none;
+        }
+        position: relative;
+        .dropdown {
+            display: grid;
+            position: absolute;
+            margin-top: 50px;
+            width: 140px;
+            left: -10px;
+            justify-content: center;
+            padding: 8px;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(190, 190, 190);
+            a {
+                color: rgb(90, 90, 90);
+                cursor: pointer;
+            }
+        }
+    }
+    .ul {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        @media only screen and (max-width: 800px) {
+            display: none;
+        }
+    }
+    ul {
+        display: flex;
+        gap: 1.3rem;
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(97, 96, 96);
+            span {
+                display: flex;
+            }
+            &:hover{
+                color: black;
+            }
+        }
+    }
+
+    .icon {
+        margin-right: 5%;
+        display: none;
+        @media only screen and (max-width: 800px) {
+            display: block;
+        }
+        z-index: 7;
+        cursor: pointer;
+    }
+}
+
+.nav-dark {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    box-shadow: rgba(9, 12, 17, 0.24) 0px 3px 8px;
+    @media only screen and (max-width: 500px) {
+        height: 75px;
+        backdrop-filter: blur(0px);
+    }
+    .ham {
+        position: fixed;
+        width: 250px;
+        text-align: center;
+        border: 1px solid rgb(201, 201, 201);
+        right: 0;
+        top: 0;
+        background-color: rgb(253, 253, 253);
+        height: 100vh;
+        z-index: 3;
+        transition: transform 3s ease;
+        opacity: 0;
+        transform: translateX(250px);
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid rgb(206, 203, 203);
+        display: none;
+        .nav {
+            display: grid;
+            text-align: start;
+            ul {
+                display: grid;
+                text-align: start;
+                align-items: center;
+            }
+        }
+    }
+    .ham.show {
+        opacity: 0.9;
+        display: grid;
+        transform: translateX(0px);
+    }
+    .content-1 {
+        display: flex;
+        gap: 2rem;
+        margin-left: 5%;
+        .logo {
+            a {
+                text-decoration: none;
+                font-weight: bolder;
+                font-size: 3vh;
+                color: black;
+                img {
+                    width: 100px;
+                    height: 100px;
+                    @media only screen and (max-width: 500px) {
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+            }
+        }
+    }
+    .content-2 {
+        margin-right: 6%;
+        @media only screen and (max-width: 800px) {
+            display: none;
+        }
+        position: relative;
+        .dropdown {
+            display: grid;
+            position: absolute;
+            margin-top: 50px;
+            width: 140px;
+            left: -10px;
+            justify-content: center;
+            padding: 8px;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(190, 190, 190);
+            a {
+                color: rgb(90, 90, 90);
+                cursor: pointer;
+            }
+        }
+    }
+    .ul {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        @media only screen and (max-width: 800px) {
+            display: none;
+        }
+    }
+    ul {
+        display: flex;
+        gap: 1rem;
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(167, 161, 161);
+            &:hover{
+                color: rgb(255, 255, 255);
+            }
+        }
+    }
+
+    .icon {
+        margin-right: 5%;
+        display: none;
+        @media only screen and (max-width: 800px) {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,415 @@
+.step-ctn {
+    @media only screen and (max-width: 600px) {
+        padding-top: 150px;
+        padding-bottom: 60px;
+    }
+    .container-fluid {
+        padding: 100px;
+        @media only screen and (max-width: 1000px) {
+            padding: 12%;
+            @media only screen and (max-width: 600px) {
+                display: none;
+            }
+        }
+    }
+    .header{
+        text-align: center;
+        padding-bottom: 50px;
+        display: none;
+        @media only screen and (max-width: 600px) {
+            display: block;
+        }
+        h1{
+            font-size: 1.5rem;
+            font-weight: normal;
+        }
+    }
+    .content-ctn {
+        display: grid;
+        justify-content: center;
+        .card {
+            width: 350px;
+            height: 300px;
+            border: 1px solid rgb(187, 185, 185);
+            border-radius: 10px;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            text-align: center;
+            .text{
+                display: grid;
+                gap: 1rem;
+                padding-top: 10px;
+                max-width: 250px;
+                p{
+                    font-size: 0.8rem;
+                }
+                .feature{
+                    text-align: start;
+                    width: 200px;
+                    margin: auto;
+                    h2{
+                        font-weight: normal;
+                        font-size: 1rem;
+                    }
+                }
+                .price{
+                    position: relative;
+                    margin-top: 10%;
+                    margin-bottom: 10%;
+                    h1{
+                        font-size: 2.5rem;
+                        color: rgb(94, 134, 243);
+                    }
+                    span{
+                        font-size: 1rem;
+                        font-weight: normal;
+                        color: black;
+                    }
+                    h3{
+                        position: absolute;
+                        top: 2px;
+                        left: 38px;;
+                    }
+                 
+                }
+            }
+        }
+        .card-2 {
+            width: 1000px;
+            display: flex;
+            justify-content: center;
+            img {
+                width: 150px;
+                margin-top: 10%;
+                height: 130px;
+            }
+            form {
+                display: flex;
+                gap: 5rem;
+                @media only screen and (max-width: 600px) {
+                    display: grid;
+                    gap: 2rem;
+                    padding-bottom: 30px;
+                }
+                .input {
+                    scale: 1;
+                    transition: 1s;
+                    border: 1px solid rgb(190, 190, 189);
+                    display: grid;
+                    justify-content: center;
+                    text-align: center;
+                    gap: 1rem;
+                    width: 200px;
+                    height: 250px;
+                    padding: 15px;
+                    border-radius: 10px;
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                    color: #808080;
+                    &:hover {
+                        scale: 1.1;
+                    }
+                    input {
+                        width: 20px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+        .link {
+            margin-top: 5%;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            a {
+                text-decoration: none;
+                background-color: rgb(92, 92, 204);
+                border-radius: 10px;
+                color: white;
+                padding: 10px;
+                width: 100px;
+            }
+        }
+    }
+    .form {
+        display: grid;
+        justify-content: center;
+        .card-ctn {
+            border: 1px solid rgb(155, 152, 152);
+            width: 200px;
+            height: 250px;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .card {
+            display: grid;
+            justify-content: center;
+            text-align: center;
+            gap: 2rem;
+            img {
+                width: 150px;
+            }
+            h1 {
+                font-size: 1rem;
+                text-transform: uppercase;
+            }
+        }
+        form {
+            display: grid;
+            text-align: center;
+            margin-top: 10%;
+            input {
+                height: 20px;
+                padding: 10px;
+                border-radius: 10px;
+                border: 1px solid rgb(155, 152, 152);
+            }
+        }
+    }
+    .link {
+        margin-top: 5%;
+        @media only screen and (max-width: 600px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        display: flex;
+        max-width: 1000px;
+        margin: auto;
+        padding-bottom: 150px;
+        margin-top: 2%;
+        justify-content: space-between;
+        text-align: center;
+        a {
+            text-decoration: none;
+            background-color: rgb(92, 92, 204);
+            border-radius: 10px;
+            color: white;
+            padding: 10px;
+            width: 100px;
+            cursor: pointer;
+        }
+    }
+    .content-step5 {
+        display: grid;
+        justify-content: center;
+        .card {
+            border: 1px solid rgb(156, 156, 156);
+            padding: 30px;
+            border-radius: 20px;
+        }
+        .img {
+            display: grid;
+            justify-content: center;
+            padding-bottom: 30px;
+            img {
+                width: 120px;
+            }
+        }
+        .text {
+            h1 {
+                font-size: 1.3rem;
+                font-weight: normal;
+                color: #777777;
+            }
+        }
+    }
+    .payment {
+        display: grid;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: -50px;
+        .text {
+            display: grid;
+            text-align: center;
+            gap: 2rem;
+            h1 {
+                color: #695e5e;
+            }
+            .card {
+                border-radius: 10px;
+                background-color: rgb(11, 196, 4);
+                padding: 20px;
+                .head {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1rem;
+                    h3 {
+                        color: white;
+                        margin-top: 8px;
+                    }
+                }
+                .text-1 {
+                    display: grid;
+                    justify-content: center;
+                    margin-top: 20px;
+                    background-color: white;
+                    align-items: center;
+                    padding: 20px;
+                    gap: 0.5rem;
+                    u {
+                        width: 200px;
+                        border: 1px solid rgb(11, 196, 4);
+                    }
+                    h1 {
+                        color: rgb(11, 196, 4);
+                        font-size: 1.4rem;
+                        font-weight: normal;
+                    }
+                }
+                img {
+                    width: 50px;
+                }
+            }
+        }
+        form {
+            display: grid;
+            gap: 1rem;
+            label {
+                color: red;
+            }
+            input {
+                background-color: #ededed;
+                padding: 10px;
+            }
+            button {
+                padding: 10px;
+                border: 0;
+                border-radius: 10px;
+                background-color: rgb(47, 187, 43);
+                cursor: pointer;
+                color: white;
+            }
+        }
+        img {
+            margin-top: 5%;
+            width: 350px;
+            height: 100%;
+        }
+    }
+    .content-template{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        .card{
+            display: grid;
+            gap: 1rem;
+            border: 1px solid rgb(219, 218, 218);
+            background-color: #f7f7f7;
+            border-radius: 10px;
+            scale: 0.9;
+            transition: 1s;
+            width: 370px;
+            &:hover{
+                scale: 1;
+            }
+            h1{
+                font-size: 1.2rem;
+                text-align: center;
+                font-weight: normal;
+            }
+            .img{
+                max-height: 90vh;
+                img{
+                    border-radius: 10px 10px 0 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .input{
+                display: grid;
+                padding-bottom: 20px;
+                height: 50px;
+                justify-content: center;
+                align-items: center;
+                input{
+                    width: 20px;
+                    height: 20px;
+                    scale: 1;
+                }
+            }
+        }
+    }
+}
+
+.step-ctn {
+    $brand-primary: rgb(149, 147, 221);
+    $white: #fff;
+    $grey-light: #ededed;
+    %remain-steps {
+        &:before {
+            content: counter(stepNum);
+            font-family: inherit;
+            font-weight: 700;
+        }
+        &:after {
+            background-color: $grey-light;
+        }
+    }
+    .multi-steps {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        > li {
+            counter-increment: stepNum;
+            text-align: center;
+            display: table-cell;
+            position: relative;
+            color: $brand-primary;
+
+            &:before {
+                content: "\f00c";
+                content: "\2713;";
+                content: "\10003";
+                content: "\10004";
+                content: "\2713";
+                display: block;
+                margin: 0 auto 4px;
+                background-color: $white;
+                width: 36px;
+                height: 36px;
+                line-height: 32px;
+                text-align: center;
+                font-weight: bold;
+                border-radius: 50%;
+                border: 2px solid rgb(103, 81, 182);
+            }
+            &:after {
+                content: "";
+                height: 2px;
+                width: 100%;
+                background-color: $brand-primary;
+                position: absolute;
+                top: 16px;
+                left: 50%;
+                z-index: -1;
+            }
+            &:last-child {
+                &:after {
+                    display: none;
+                }
+            }
+
+            &.is-active {
+                @extend %remain-steps;
+                &:before {
+                    background-color: $white;
+                    border-color: $brand-primary;
+                }
+
+                ~ li {
+                    color: #808080;
+                    @extend %remain-steps;
+                    &:before {
+                        background-color: $grey-light;
+                        border-color: $grey-light;
+                    }
+                }
+            }
+        }
+    }
+}

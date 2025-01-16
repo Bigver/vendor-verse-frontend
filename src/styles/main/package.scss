@@ -1,0 +1,88 @@
+.package-ctn{
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    @media only screen and (max-width: 1200px) {
+        height: 100%;
+        padding-bottom: 10%;
+    }
+    .card-ctn{
+        padding-top: 100px;
+        margin-top: 10%;
+        display: flex;
+        flex-wrap: wrap;
+        @media only screen and (max-width: 1200px) {
+            justify-content: center;
+            margin-top: 30%;
+        }
+        gap: 2rem;
+        .card{
+            width: 350px;
+            height: 550px;
+            border: 1px solid rgb(187, 185, 185);
+            border-radius: 10px;
+            display: grid;
+            justify-content: center;
+            text-align: center;
+            .img{
+                width: 100%;
+                height: 90%;
+            }
+            .text{
+                margin-bottom: 40px;
+                display: grid;
+                gap: 0.5rem;
+                max-width: 250px;
+                p{
+                    font-size: 0.8rem;
+                }
+                .feature{
+                    text-align: start;
+                    width: 200px;
+                    margin: auto;
+                    h2{
+                        font-weight: normal;
+                        font-size: 1rem;
+                    }
+                }
+                .price{
+                    position: relative;
+                    h1{
+                        font-size: 2.5rem;
+                        color: rgb(94, 134, 243);
+                    }
+                    span{
+                        font-size: 1rem;
+                        font-weight: normal;
+                        color: black;
+                    }
+                    h3{
+                        position: absolute;
+                        top: 2px;
+                        left: 38px;;
+                    }
+                 
+                }
+            }
+            button{
+                cursor: pointer;
+                margin-top: 6%;
+                width: 200px;
+                margin: auto;
+                border: 1px solid white;
+                padding: 5px;
+                background-color: rgb(94, 134, 243);
+                border-radius: 5px;
+                color: white;
+                height: 40px;
+                transition: 1s;
+                scale: 0.95;
+                &:hover{
+                    scale: 1;
+                }
+            }
+        }
+    }
+}

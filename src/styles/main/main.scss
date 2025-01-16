@@ -1,0 +1,26 @@
+@import './navbar.scss';
+@import './home.scss';
+@import './footer.scss';
+@import './login.scss';
+@import './package.scss';
+@import './step.scss';
+@import './manageWebsite.scss';
+@import './loading.scss';
+@import './profile.scss';
+@import './reset-password.scss';
+@import './blog.scss';
+@import './sidebar.scss';
+@import './feature.scss';
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;    
+}
+
+.app{
+    margin: auto;
+    font-family: "IBM Plex Sans Thai", sans-serif;
+}
