@@ -1,0 +1,46 @@
+.information-ctn{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    margin-top: 70px;
+    form{
+        display: grid;
+        gap: 1rem;
+        border: 1px solid rgb(187, 181, 181);
+        padding: 50px;
+        width: 500px;
+        text-align: start;
+        border-radius: 20px;
+        box-shadow: rgba(96, 96, 201, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        h1{
+            font-size: 1.5rem;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        input{
+            padding: 10px;
+            border: 1px solid rgb(212, 212, 212);
+        }
+        textarea{
+            height: 70px;
+            padding: 10px;
+            border: 1px solid rgb(212, 212, 212);
+        }
+        button{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+    }
+     //mobile
+     @media only screen and (max-width: 500px) {
+        height: 50vh;
+        form{
+            margin-top: -150px;
+            scale: 0.6;
+        }
+     }
+}

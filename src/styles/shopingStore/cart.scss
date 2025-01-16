@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+.cart-ctn1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 70vh;
+    padding-top: 100px;
+    .header{
+       text-align: center;
+       margin-top: 5%; 
+       letter-spacing: 5px;    
+       padding-bottom: 30px;
+    }  
+    .product {
+        margin-top: 6%;
+        display: grid;
+        .link {
+            color: black;
+            text-decoration: none;
+        }
+        u {
+            background-color: rgb(173, 169, 169);
+            height: 1px;
+            display: grid;
+            margin-top: 20px;
+            width: 90%;
+            margin-left: 5%;
+        }
+        .card {
+            display: flex;
+            justify-content: start;
+            margin-left: 100px;
+            img {
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                border: 2px solid #d8d7d7;
+                border-radius: 15px;
+            }
+            .text {
+                margin-left: 5%;
+                h1 {
+                    font-size: 3.5vh;
+                    font-family: "Nunito", sans-serif;
+                }
+                p {
+                    margin-top: 3%;
+                    font-size: 1.3rem;
+                    letter-spacing: 1px;
+                    font-family: "Nunito", sans-serif;
+                    font-style: 100;
+                }
+                .del {
+                    cursor: pointer;
+                }
+                .quantity {
+                    display: flex;
+                    gap: 1rem;
+                    margin-top: 10%;
+                    padding-bottom: 30px;
+                    a {
+                        font-weight: bolder;
+                        font-size: 1rem;
+                        cursor: pointer;
+                        font-weight: bolder;
+                    }
+                    h2 {
+                        font-size: 1rem;
+                        font-weight: bolder;
+                    }
+                    h3 {
+                        background-color: black;
+                        color: white;
+                        width: 20px;
+                        text-align: center;
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+    }
+    .total-price {
+        display: flex;
+        justify-content: center;
+        margin-top: 6%;
+        .content {
+            min-width: 400px;
+            box-sizing: 2px 2px black;
+            .text-ctn {
+                padding: 30px;
+                background-color: rgb(240, 240, 240);
+                border-radius: 10px;
+                u {
+                    background-color: black;
+                    height: 1.5px;
+                    display: grid;
+                    margin-top: 20px;
+                }
+            }
+            .text {
+                display: flex;
+                justify-content: space-between;
+                h1 {
+                    font-size: 2vh;
+                    font-weight: normal;
+                }
+            }
+        }
+        .check-out {
+            display: grid;
+            background-color: rgb(240, 240, 240);
+            padding-bottom: 50px;
+            padding-left: 30px;
+            padding-right: 30px;
+            .text {
+                padding: 30px;
+                display: flex;
+                h1 {
+                    font-weight: bolder;
+                }
+            }
+            button {
+                cursor: pointer;
+                background-color: black;
+                color: white;
+                height: 50px;
+                width: 100%;
+                scale: 0.9;
+                transition: 1s;
+                &:hover{
+                    scale: 0.95;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 900px) {
+        grid-template-columns: repeat(1, 1fr);
+        .total-price {
+            .content{
+                width: 80%;
+            }
+        }
+      
+        .product{
+            .card{
+                .text{
+                    margin-top: 30px;
+                    h1{
+                        font-size: 1rem;
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+            }
+            img{
+                scale: 0.8;
+            }
+        }
+    }
+    //mobile
+    @media only screen and (max-width: 500px) {
+        grid-template-columns: repeat(1, 1fr);
+        .total-price {
+            .content{
+                width: 400px;
+            }
+        }
+        .product{
+            scale: 0.85;
+            .card{
+                .text{
+                    margin-top: 30px;
+                    h1{
+                        font-size: 1rem;
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+            }
+            img{
+                scale: 0.8;
+            }
+        }
+    }
+}

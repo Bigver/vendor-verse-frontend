@@ -1,0 +1,122 @@
+.filter-ctn-1 {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    margin-top: 2%;
+    position: relative;
+    margin-top: 150px;
+    color: black;
+    .icon {
+        a {
+            color: black;
+            display: flex;
+            gap: 0.2rem;
+            align-items: center;
+            text-decoration: none;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 5px;
+            font-size: 0.8rem;
+            cursor: pointer;
+        }
+    }
+    @media only screen and (max-width: 500px) {
+        .icon{
+            margin-left: 5%;
+        }
+    }
+    .filter.show{
+        opacity: 1;
+        transform: translateX(0); /* เริ่มที่ตำแหน่งเดิม */
+    }
+    .filter{
+        position: fixed;
+        width: 220px;
+        text-align: center;
+        left: 0;
+        top: 0;
+        background-color: rgb(253, 253, 253);
+        height: 100%;
+        z-index: 2;
+        transition: transform 1s ease;
+        opacity: 0;
+        transform: translateX(-200px);
+        border-right: 1px solid rgb(206, 203, 203);
+        .search-ctn{
+            margin-top: 10%;
+            h1{
+                font-size: 1.5rem;
+                font-weight: bolder;
+            }
+            .search-bar{
+                margin-top: 10%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                input{
+                    width: 150px;
+                    height: 20px;
+                    padding: 5px;
+                    border: 1px solid rgb(204, 200, 200);
+                    border-radius: 10px;
+                }
+                label{
+                    margin-left: 2%;
+                    margin-top: 2px;
+                }
+            }
+        }
+        .category-ctn{
+            margin-top: 20%;
+            h1{
+                font-size: 1.5rem;
+                font-weight: bolder;
+            }
+            .category{
+                text-align: start;
+                margin-top: 5%;
+                margin-left: 10%;
+                display: grid;
+                gap: 0.8rem;
+                a{
+                    cursor: pointer;
+                }
+                .active{
+                    color: rgb(122, 62, 62);
+                    font-weight: bolder;
+                }
+            }
+        }
+        .filter-price{
+            margin-top: 20%;
+            h1{
+                font-size: 1.5rem;
+                font-weight: bolder;
+            }
+            .price{
+                margin-top: 5%;
+                display: grid;
+                padding: 20px;
+            }
+        }
+        .off{
+            text-align: end;
+            margin-right: 2%;
+            margin-top: 2%;
+            a{
+                background-color: rgb(7, 3, 3);
+                color: white;
+                border-radius: 50%;
+                padding: 3px;
+                width: 34px;
+                font-size: 0.7rem;
+                height: 34px;
+                font-weight: normal;
+                cursor: pointer;
+            }
+        }
+    }
+}

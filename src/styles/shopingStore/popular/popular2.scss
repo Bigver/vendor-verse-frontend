@@ -1,0 +1,39 @@
+.popular-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap : 3rem;
+    img{
+        width:45vh;
+        height: 60vh;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 1px solid rgb(224, 222, 222);
+        scale: 0.95;
+        transition: 1s;
+    }
+    img:hover{
+        scale: 1;
+    }
+    .text-2{
+        text-align: start;
+        margin-top: 5%;
+        margin-left: 3%;
+        font-weight: normal;
+    }
+    @media only screen and (max-width: 900px) {
+        img{
+            width: 30vh;
+            height: 40vh;
+        }
+        .text-1{
+            font-size: 1.5vh;
+        }
+        .text-2{
+            margin-top: 10px;
+            h3{
+                font-size: 1.5vh;
+            }
+        }
+    }
+}

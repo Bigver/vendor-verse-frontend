@@ -1,0 +1,133 @@
+.footer-ctn1 {
+    height: 300px;
+    background-color: black;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: start;
+    justify-content: center;
+    z-index: 3;
+    border-top: 1px solid rgb(190, 190, 190);
+    .content1 {
+        display: grid;
+        gap: 1rem;
+        margin-left: 15%;
+        margin-top: 15%;
+        .logo {
+            text-align: start;
+            p {
+                color: rgb(155, 155, 155);
+            }
+            img {
+                width: 30px;
+                padding-bottom: 10px;
+            }
+        }
+        .contact {
+            .link {
+                display: grid;
+                justify-content: start;
+                text-align: center;
+                ul {
+                    display: flex;
+                    gap: 1rem;
+                    margin-left: 6%;
+                    text-align: center;
+                }
+                a {
+                    img {
+                        width: 40px;
+                        height: 100%;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+    ul {
+        li {
+            list-style: none;
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .content2 {
+        margin-top: 15%;
+        display: grid;
+        justify-content: center;
+        .header {
+            font-size: 1.6rem;
+            padding-bottom: 17px;
+        }
+        ul {
+            display: grid;
+            gap: 1rem;
+        }
+    }
+    .content3 {
+        margin-top: 15%;
+        display: grid;
+        justify-content: center;
+        .header {
+            font-size: 1.6rem;
+            padding-bottom: 17px;
+        }
+        ul {
+            display: flex;
+            gap: 1rem;
+        }
+    }
+    .content4 {
+        margin-top: 12%;
+        display: grid;
+        justify-content: center;
+        align-items: start;
+        height: 120px;
+        .btn {
+            button {
+                background-color: rgb(255, 255, 255);
+                color: rgb(5, 4, 4);
+                padding: 10px;
+                width: 150px;
+                scale: 0.9;
+                cursor: pointer;
+                transition: 1s;
+                font-weight: 900;
+            }
+            button:hover {
+                scale: 1;
+            }
+        }
+    }
+    //mobile
+    @media only screen and (max-width: 500px) {
+        grid-template-columns: repeat(1, 1fr);
+        height: 100%;
+        gap: 2rem;
+        .content1 {
+            margin-top: 10%;
+            margin-right: 15%;
+            .logo {
+                gap: 1rem;
+                margin-top: 6%;
+                display: grid;
+                justify-content: center;
+                width: 290px;
+            }
+            .contact {
+                display: grid;
+                margin-left: -5%;
+            }
+        }
+        .content2 {
+            justify-content: start;
+            margin-left: 15%;
+        }
+        .content3 {
+            justify-self: start;
+            margin-left: 15%;
+        }
+    }
+}

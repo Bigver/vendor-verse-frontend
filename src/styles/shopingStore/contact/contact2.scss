@@ -1,0 +1,85 @@
+.contact-template2 {
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    .card{
+        background-color: rgb(253, 253, 253);
+        max-width: 80%;
+        height: 80%;
+        border-radius: 20px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        .img{
+            padding: 30px;
+            img{
+                border-radius: 20px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .form{
+            text-align: center;
+            padding: 60px;
+            color: rgb(133, 130, 130);
+            form{
+                padding-top: 20px;
+                display: grid;
+                gap: 2rem;
+                input{
+                    padding: 10px;
+                    background-color: transparent;
+                    border-bottom: 2px solid rgb(65, 63, 61);
+                    border-top: 0px;
+                    border-right: 0px;
+                    border-left: 0px;
+                }
+                button{
+                    padding: 10px;
+                    background-color: black;
+                    color: white;
+                    font-weight: bolder;
+                    cursor: pointer;
+                    scale: 0.9;
+                    border-radius: 10px;
+                    transition: 1s;
+                    &:hover{
+                        scale: 1;
+                    }
+                }
+            }
+            .text{
+                text-align: start;
+                display: flex;
+                justify-content: space-around;
+                margin-top: 50px;
+                color: rgb(97, 93, 93);
+                h3{
+                    display: flex;
+                    font-size: 1rem;
+                    font-weight: normal;
+                    align-items: center;
+                    gap: 0.5rem;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 800px) {
+        .card{
+            background-color: rgb(255, 248, 228);
+            max-width: 90%;
+            height: 95%;
+            border-radius: 20px;
+            display: grid;
+            grid-template-columns: repeat(1 , 1fr);
+            .form{
+                .text{
+                    display: grid;
+                    gap: 1rem;
+                    padding-bottom: 50px;
+                }
+            }
+    }}
+}

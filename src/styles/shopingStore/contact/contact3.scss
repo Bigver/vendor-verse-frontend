@@ -1,0 +1,111 @@
+.contact-template3 {
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    .card{
+        background-color: rgb(253, 253, 253);
+        max-width: 80%;
+        height: 80%;
+        border-radius: 20px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        .contact{
+            padding: 50px;
+            display: grid;
+            .text1{
+                display: grid;
+                p{
+                    color: rgb(158, 154, 154);
+                }
+            }
+            .text2{
+                display: grid;
+                padding-bottom: 30px;
+                .text{
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    color: rgb(112, 111, 111);
+                    h4{
+                        font-weight: normal;
+                    }
+                }
+            }
+            .text3{
+                display: grid;
+                .text{
+                    display: flex;
+                    gap: 2rem;
+                    a{
+                        color: black;
+                        text-decoration: none;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+        .form{
+            text-align: center;
+            padding: 60px;
+            color: rgb(133, 130, 130);
+            border-right: 2px solid rgb(22, 16, 16);
+            form{
+                padding-top: 20px;
+                display: grid;
+                gap: 4rem;
+                input{
+                    padding: 10px;
+                    background-color: transparent;
+                    border-bottom: 2px solid rgb(65, 63, 61);
+                    border-top: 0px;
+                    border-right: 0px;
+                    border-left: 0px;
+                }
+                button{
+                    padding: 10px;
+                    background-color: black;
+                    color: white;
+                    font-weight: bolder;
+                    cursor: pointer;
+                    scale: 0.9;
+                    border-radius: 10px;
+                    transition: 1s;
+                    &:hover{
+                        scale: 1;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 800px) {
+        .card{
+            max-width: 90%;
+            height: 95%;
+            border-radius: 20px;
+            display: grid;
+            grid-template-columns: repeat(1 , 1fr);
+            .form{
+                border-right: 0px solid rgb(22, 16, 16);
+                padding: 30px;
+                .text{
+                    display: grid;
+                    gap: 1rem;
+                    padding-bottom: 30px;
+                }
+            }
+            .contact{
+                display: grid;
+                gap: 4rem;
+                .text2{
+                    gap: 1rem;
+                }
+                .text3{
+                    gap: 1rem;
+                    padding-bottom: 50px;
+                }
+            }
+    }}
+}

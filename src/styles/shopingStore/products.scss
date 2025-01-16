@@ -1,0 +1,127 @@
+.products-ctn{
+    .product{
+        display: flex;
+        min-height: 50vh;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 80px;
+        max-width: 1400px;
+        margin: auto;
+        gap: 2rem;
+        @media only screen and (max-width: 500px) {
+            padding-top: 0px;
+        }
+        .link{
+           list-style: none;
+           text-decoration: none;
+        }
+        .card{
+            width: 300px;
+            height: 400px;
+            // border: 1px solid rgb(189, 186, 186);
+            border-radius: 0px 0px 10px 10px;
+            scale: 0.9;
+            position: relative;
+            transition: 1s;
+            .icon{
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+                background-color: rgb(167, 149, 126);
+                padding: 5px;
+                width:30px;
+                display: grid;
+                justify-content: center;
+                cursor: pointer;
+            }
+            .out-stock{
+                position: absolute;
+                top: 20px;
+                left: 0px;
+                background-color: rgb(255, 0, 0);
+                width: 50px;
+                border-radius: 0px 10px 10px 0px;
+                color: white;
+                font-size: 0.3rem;
+                padding: 5px;
+                display: grid;
+                justify-content: center;
+                cursor: pointer;
+            }
+            .img{
+                img{
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                    border: 1px solid rgb(189, 186, 186);
+                }
+            }
+            .text{
+                height: 150px;
+                text-align: start;
+                align-items: center;
+                justify-content: center;
+                margin-top: 10px;
+                h1{
+                    font-size: 1.3rem;
+                    font-weight: normal;
+                }
+                .text-1{
+                    margin-top: 2%;
+                    p{
+                        margin-top: 5%;
+                        font-size: 1.2rem;
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+        .card:hover{
+            scale: 1;
+        }
+    }
+    @media only screen and (max-width: 500px) {
+        .product{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: 10%;
+            justify-content: center;
+            gap: 0rem;
+            .card{
+                width: 200px;
+                scale: 0.8;
+                margin-left: -3%;
+                .img{
+                    img{
+                        width: 200px;
+                    }
+                }
+            }
+            .card:hover{
+                scale: 0.9;
+            }
+        }
+    }
+}
+
+.products-ctn {
+    min-height: 60vh;
+    width: 100%;
+    display: grid;
+    .filter-ctn {
+        margin-top: 2%;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 50px;
+        .filter {
+            justify-content: end;
+            width: 80%;
+            display: flex;
+            gap: 1rem;
+        }
+    }
+    .product {
+        width: 100%;
+    }
+}

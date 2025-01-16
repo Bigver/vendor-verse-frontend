@@ -1,0 +1,51 @@
+.contact-template1 {
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    .text {
+        max-width: 700px;
+        text-align: center;
+        h1 {
+            font-weight: normal;
+            font-size: 10vh;
+        }
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 50px;
+            gap: 3rem;
+            justify-content: space-around;
+            max-width: 700px;
+            .card {
+                width: 200px;
+                height: 200px;
+            }
+            .icon {
+                display: grid;
+                justify-content: center;
+                text-align: center;
+                h1 {
+                    font-size: 1.5rem;
+                    padding-top: 10px;
+                }
+                h3 {
+                    padding-top: 30px;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 800px) {
+        .text {
+            padding-top: 40px;
+            h1 {
+                font-weight: normal;
+                font-size: 6vh;
+            }
+            .contact {
+                gap: 0rem;
+            }
+        }
+    }
+}
