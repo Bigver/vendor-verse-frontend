@@ -48,7 +48,7 @@ const Navbar: React.FC<Content1Props> = ({ nav }) => {
                     <li><a href="/package">แพ็คเกจ</a></li>
                     <li><a href="/blogs">บล็อค</a></li>
                     <li><a href="/feature">วิธีการใช้งาน</a></li>
-                    <li><a href="">ช่วยเหลือ</a></li>
+                    <li><a href="/#help">ช่วยเหลือ</a></li>
                 </ul>
             </div>
             {show ? (
@@ -76,13 +76,13 @@ const Navbar: React.FC<Content1Props> = ({ nav }) => {
             <div className={`ham ${navbarShow ? "show" : ""}`}>
                 <div className='link'>
                     <ul>
-                        <li><a href="/package">ราคาแพ็กเกจ</a></li>
+                        <li><a href="/package">แพ็กเกจ</a></li>
                         <li><a href="/blogs">บล็อค</a></li>
                         <li><a href="/feature">วิธีการใช้งาน</a></li>
                         {token ? <>
                             <li><a href="/profile">โปรไฟล์</a></li>
                             <li><a href="/manage">จัดการเว็บไซต์</a></li>
-                            <li><a href="">ช่วยเหลือ</a></li>
+                            <li><a href="/#help">ช่วยเหลือ</a></li>
                             <li><a onClick={handleLogout}>Logout</a></li>
                         </> : <>
                             <li><a href="login">เข้าสู่ระบบ</a></li>

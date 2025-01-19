@@ -4,7 +4,7 @@ import Content2 from '../../components/main/home/Content2'
 import Content4 from '../../components/main/home/Content4'
 import Content5 from '../../components/main/home/Content5'
 import Navbar from '../../components/main/Navbar'
-import React, { useEffect, useRef , useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 import Content_1 from '../../components/main/home/Content3/Content_1'
 import Content_2 from '../../components/main/home/Content3/Content_2'
@@ -53,7 +53,7 @@ const HomePage: React.FC = () => {
     }
   };
   let nav = "navbar-ctn"
-  if (fadeOutIndex===4 || fadeOutIndex===5 || fadeOutIndex===6){
+  if (fadeOutIndex === 4 || fadeOutIndex === 5 || fadeOutIndex === 6) {
     nav = "nav-dark"
   }
   return (
@@ -69,21 +69,23 @@ const HomePage: React.FC = () => {
         <section className='content-3'>
           <div className="feature-ctn">
             <div ref={(el) => (sectionsRef.current[2] = el)}>
-              <Content_1/>      
+              <Content_1 />
             </div>
             <div ref={(el) => (sectionsRef.current[3] = el)}>
-              <Content_2/>      
+              <Content_2 />
             </div>
             <div ref={(el) => (sectionsRef.current[4] = el)}>
-              <Content_3/>      
+              <Content_3 />
             </div>
           </div>
         </section>
         <div ref={(el) => (sectionsRef.current[5] = el)}>
           <Content4 />
         </div>
+        <div ref={(el) => (sectionsRef.current[6] = el)}>
           <Content5 />
           <Footer />
+        </div>
       </div>
     </div>
 

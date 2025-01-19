@@ -4,6 +4,7 @@ import { requestMethod } from "../../../requestMethod";
 import axios from 'axios';
 import { GoChevronLeft } from "react-icons/go";
 import { GoChevronRight } from "react-icons/go";
+import Loading from '../../main/Loading';
 
 interface ContentProps {
   link: string;
@@ -78,7 +79,7 @@ const Template1: React.FC<ContentProps> = ({ link, store_id, category, image , c
             </div>
           ))}
         </div>}
-      {loading ? "LOADING" :
+      {loading ? <Loading/> :
         <div className='menus-ctn'>
           {productData.map((item: any) => (
             <Menu link={link} image={item.product_img} name={item.name} price={item.price} id={item.id} />

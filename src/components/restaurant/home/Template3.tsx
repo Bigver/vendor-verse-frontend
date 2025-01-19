@@ -3,6 +3,7 @@ import Menu from '../Menu';
 import { requestMethod } from "../../../requestMethod";
 import axios from 'axios';
 import { FaSearch } from "react-icons/fa";
+import Loading from '../../main/Loading';
 
 interface ContentProps {
   link: string;
@@ -59,8 +60,8 @@ const Template3: React.FC<ContentProps> = ({ link, store_id, category, title, de
       {category_template === 1 ?
         <div className="container">
           <div className={`item ${categoryActive === "all" ? 'active' : ''}`} ><a onClick={() => setCategoryActive(`all`)}>ทั้งหมด</a></div>
-          {category.map((item: any) => (
-            <div className={`item ${categoryActive === item ? 'active' : ''}`}>
+          {category.map((item: any , index) => (
+            <div key={index} className={`item ${categoryActive === item ? 'active' : ''}`}>
               <a onClick={() => setCategoryActive(`${item}`)}>{item}</a>
             </div>
           ))}
@@ -73,7 +74,7 @@ const Template3: React.FC<ContentProps> = ({ link, store_id, category, title, de
             <a onClick={() => setCategoryActive(`all`)}>ทั้งหมด</a>
           </div>
           {category.map((item: any, index) => (
-            <div className={`item2 ${categoryActive === item ? 'active' : ''}`}>
+            <div className={`item2 ${categoryActive === item ? 'active' : ''}`} key={index}>
               <div className="img">
                 <img src={category_image[index]} alt="" />
               </div>
@@ -81,7 +82,7 @@ const Template3: React.FC<ContentProps> = ({ link, store_id, category, title, de
             </div>
           ))}
         </div>}
-      {loading ? "LOADING" :
+      {loading ? <Loading/> :
         <div className='menus-ctn'>
           {filteredProducts.map((item: any) => (
             <Menu link={link} image={item.product_img} name={item.name} price={item.price} id={item.id} />

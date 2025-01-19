@@ -340,9 +340,11 @@
             gap: 1rem;
             margin-top: 5%;
             img {
-                width: 50px;
+                width: 70px;
+                object-fit: cover;
                 height: 50px;
-                border-radius: 50%;
+                border: 1px solid rgb(233, 233, 233);
+                // border-radius: 50%;
             }
         }
     }

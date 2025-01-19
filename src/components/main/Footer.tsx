@@ -10,14 +10,13 @@ const Footer = () => {
         </div>
         <div className="content">
           <h1>FEATURE</h1>
-          <p>ระบบร้านค้า</p>
-          <p>ระบบจัดการร้านอาหาร</p>
-          <p>ระบบจัดการหลังบ้าน</p>
+          <a href='/feature#feature-store'>- ระบบร้านค้า</a>
+          <a href='/feature#feature-restaurant-start'>- ระบบร้านอาหาร</a>
         </div>
         <div className="content">
-          <h1>ร้านค้าใหม่</h1>
-          <p>เริ่มต้นการใช้งาน VendorVerse</p>
-          <p>VendorVerse คืออะไร?</p>
+          <h1>เรียนรู้การใช้งาน</h1>
+          <a href='/blogs'>- เริ่มต้นการใช้งาน VendorVerse</a>
+          <a href='/blogs'>- VendorVerse คืออะไร?</a>
         </div>
       </div>
     </div>

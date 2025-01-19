@@ -122,20 +122,14 @@
     }
 }
 
-.nav-dark {
-    height: 100px;
+.nav-dark{
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
     z-index: 1;
-    box-shadow: rgba(9, 12, 17, 0.24) 0px 3px 8px;
-
-    @media only screen and (max-width: 500px) {
-        height: 75px;
-        backdrop-filter: blur(0px);
-    }
     .ham {
         position: fixed;
         width: 250px;
@@ -153,13 +147,11 @@
         align-items: center;
         border-right: 1px solid rgb(206, 203, 203);
         display: none;
-        .nav {
-            display: grid;
-            text-align: start;
+        .link {
             ul {
                 display: grid;
-                text-align: start;
                 align-items: center;
+                text-align: start;
             }
         }
     }
@@ -168,6 +160,11 @@
         display: grid;
         transform: translateX(0px);
     }
+    @media only screen and (max-width: 500px) {
+        height: 75px;
+        backdrop-filter: blur(0px);
+    }
+    box-shadow: rgba(9, 12, 17, 0.24) 0px 3px 8px;
     .content-1 {
         display: flex;
         gap: 2rem;
@@ -190,11 +187,11 @@
         }
     }
     .content-2 {
-        margin-right: 6%;
+        margin-right: 7%;
+        position: relative;
         @media only screen and (max-width: 800px) {
             display: none;
         }
-        position: relative;
         .dropdown {
             display: grid;
             position: absolute;
@@ -221,15 +218,18 @@
     }
     ul {
         display: flex;
-        gap: 1rem;
+        gap: 1.3rem;
         li {
             list-style: none;
         }
         a {
             text-decoration: none;
-            color: rgb(167, 161, 161);
+            color: rgb(97, 96, 96);
+            span {
+                display: flex;
+            }
             &:hover{
-                color: rgb(255, 255, 255);
+                color: black;
             }
         }
     }
@@ -240,5 +240,7 @@
         @media only screen and (max-width: 800px) {
             display: block;
         }
+        z-index: 7;
+        cursor: pointer;
     }
 }

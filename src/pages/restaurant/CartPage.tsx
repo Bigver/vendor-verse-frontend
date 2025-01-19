@@ -148,7 +148,10 @@ const CartPage = () => {
                   .toFixed(2)
                 }</h1>
               </div>
-              <button onClick={handleSubmit}>CHECK OUT</button>
+              {cartItems.length === 0 ? 
+                <button onClick={handleSubmit} disabled>CHECK OUT</button>
+                : <button onClick={handleSubmit}>CHECK OUT</button>
+              }
             </div>
           </div>
         </div>

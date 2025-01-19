@@ -13,7 +13,7 @@ interface ContentProps {
 const Menu: React.FC<ContentProps> = ({ link, image, name, price, id }) => {
   return (
     <Link to={`/restaurant/${link}/product/${id}`} className='link'>
-      <div className='menu-card'>
+      <div className='menu-card' key={id}>
         <div className="img"><img src={image[0]} alt="" /></div>
         <div className="text">
           <h1>{name}</h1>

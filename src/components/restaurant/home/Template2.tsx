@@ -10,7 +10,6 @@ interface ContentProps {
 
 
 const Template2: React.FC<ContentProps> = ({ link, store_id, category , category_image }) => {
-    console.log(category_image)
     return (
         <div className='home-ctn-5'>
             <div className="card-ctn">

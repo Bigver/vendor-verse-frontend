@@ -66,7 +66,7 @@ const ManageWebsitePage = () => {
                                         {isExpired ? <div className="btn"><a href={`/per-package/${item.id}/${item.user_id}`} style={{ backgroundColor: 'red' }}>ต่ออายุ</a></div>
                                             :
                                             <div className="btn">
-                                                <a href={`http://localhost:5174/`} target='_blank' >จัดการร้าน</a>
+                                                <a href={`https://vendor-verse-admin.vercel.app/`} target='_blank' >จัดการร้าน</a>
                                                 {item.select_store === 'store' ? <a href={`${item.select_store}/${item.name_store}/homepage`} target='_blank' >เข้าสู่หน้าเว็บไซต์</a>
                                                     : ""}
                                                 {item.select_store === 'restaurant' ? <a href={`${item.select_store}/${item.name_store}/homepage/1`} target='_blank'>เข้าสู่หน้าเว็บไซต์</a> : ""}

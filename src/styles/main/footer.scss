@@ -6,6 +6,10 @@
     color: rgb(255, 255, 255);
     border-radius: 100px 100px 0px 0px;
     height: 40vh;
+    a{
+        text-decoration: none;
+        color: #ffffff;
+    }
     @media only screen and (max-width: 800px) {
         height: 75vh;
         border-radius: 0px;
@@ -40,6 +44,7 @@
             h1 {
                 font-size: 1.6rem;
                 font-weight: bolder;
+                color: #aac1e9;
             }
             p {
                 font-size: 0.9rem;

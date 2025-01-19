@@ -14,7 +14,7 @@ const ProfilePage = () => {
 
         try {
             const res = await axios.put(
-                `${requestMethod}/users/profile/${user?.decodedToken.id}`,
+                `${requestMethod}/users/profile/${user?.id}`,
                 { username, phone },
                 {
                     headers: {
