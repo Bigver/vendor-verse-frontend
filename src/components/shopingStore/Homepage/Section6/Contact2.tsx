@@ -64,7 +64,7 @@ const Contact2: React.FC<ContentProps> = ({ email, phone, title, image, store_id
         }
     };
     return (
-        <div className='contact-template2'>
+        <div className='contact-template2' data-aos="fade-up" data-aos-duration="1000">
             <div className="card">
                 <div className="img">
                     <img src={image} alt="" />

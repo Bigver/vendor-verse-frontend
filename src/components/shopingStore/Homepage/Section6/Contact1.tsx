@@ -17,7 +17,7 @@ interface ContentProps {
 
 const Contact1: React.FC<ContentProps> = ({email , phone , address , title , detail }) => {
     return (
-        <div className='contact-template1'>
+        <div className='contact-template1' data-aos="fade-up" data-aos-duration="1000">
             <div className="text">
                 <h1>{title}</h1>
                 <p>{detail}</p>

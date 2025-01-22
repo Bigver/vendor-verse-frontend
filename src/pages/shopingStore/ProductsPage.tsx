@@ -57,7 +57,7 @@ const ProductsPage = () => {
 
   const [filterShow, setFilterShow] = useState(false)
   return (
-    <div>
+    <div style={{ fontFamily: data.font }}>
       <Navbar logo={data.navbar.logo} category={data.category} link={data.name_store} color={data.navbar.text_color} template={data.navbar.template} background={data.navbar.background_color} />
       <div className='products-ctn'>
         <div className="filter-ctn-1">

@@ -104,7 +104,7 @@ const Information = () => {
   };
 
   return (
-    <div>
+    <div style={{ fontFamily: data.font }}>
       <Navbar logo={data.navbar.logo} category={data.category} link={data.name_store} color={data.navbar.text_color} template={data.navbar.template} background={data.navbar.background_color} />
       <div className="information-ctn" style={{marginBottom : '150px' , marginTop : '150px'}}>
         <form onSubmit={checkOut}>

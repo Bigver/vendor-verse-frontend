@@ -5,6 +5,7 @@ import { requestMethod } from "../../../../requestMethod";
 const templates: Record<number, React.LazyExoticComponent<React.FC<any>>> = {
     1: lazy(() => import("./ProductPopular1")),
     2: lazy(() => import("./ProductPopular2")),
+    3: lazy(() => import("./ProductPopular3")),
 };
 
 const TemplateRenderer = ({
@@ -59,7 +60,7 @@ const Popular: React.FC<ContentProps> = ({ link, color, background, template, st
             <div className="text" data-aos="fade-up" data-aos-duration="500">
                 <h1 style={{ color: color }}>New Arrivals</h1>
                 <div className='btn'>
-                    <a href="" style={{ color: color, borderColor: color }}>view more</a>
+                    <a href="" style={{ color: color, borderColor: color , cursor : 'pointer' }}>view more</a>
                 </div>
             </div>
             {loading ? "LOADING" :

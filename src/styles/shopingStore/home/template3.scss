@@ -27,9 +27,9 @@
             // margin: auto;
             h1 {
                 font-size: 10vh;
-                text-shadow:
-                    -1px -1px 1px #111,
-                    2px 2px 1px #363636;
+                // text-shadow:
+                //     -1px -1px 1px #111,
+                //     2px 2px 1px #363636;
                 letter-spacing: 1px;
             }
             p {
@@ -37,6 +37,7 @@
                 margin-top: 10px;
             }
             button {
+                cursor: pointer;
                 margin-top: 5%;
                 font-weight: bolder;
                 background-color: black;

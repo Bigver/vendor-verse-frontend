@@ -13,7 +13,7 @@ const Category2: React.FC<ContentProps> = ({ category, link, color, image }) => 
     return (
         <div className="category-template-2">
             {category.slice(0, 6).map((item , index) => (
-                <div className="card" key={index}>
+                <div className="card" key={index} data-aos="fade-up" data-aos-duration="2000">
                     <img src={image[index]} alt="" />
                     <a style={{color : color}} href={`/store/${link}/products/${item}`}>{item}</a>
                 </div>

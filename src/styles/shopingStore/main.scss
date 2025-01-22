@@ -1,8 +1,13 @@
 @use './home/template1.scss';
 @use './home/template2.scss';
 @use './home/template3.scss';
+@use './home/template4.scss';
+@use './home/template5.scss';
+
 @use './popular/popular1.scss';
 @use './popular/popular2.scss';
+@use './popular/popular3.scss';
+
 @use './about/about.scss';
 @use './about/about3.scss';
 @use './contact/contact1.scss';
@@ -14,6 +19,8 @@
 @use './navbar/navbar1.scss';
 @use './navbar/navbar2.scss';
 @use './navbar/navbar3.scss';
+@use './navbar/navbar4.scss';
+
 @use './category/category1.scss';
 @use './category/category2.scss';
 @use './footer/footer1.scss';
@@ -21,3 +28,8 @@
 @use './filter.scss';
 @use './products.scss';
 @use './product.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');

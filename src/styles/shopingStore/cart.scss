@@ -40,13 +40,11 @@
                 margin-left: 5%;
                 h1 {
                     font-size: 3.5vh;
-                    font-family: "Nunito", sans-serif;
                 }
                 p {
                     margin-top: 3%;
                     font-size: 1.3rem;
                     letter-spacing: 1px;
-                    font-family: "Nunito", sans-serif;
                     font-style: 100;
                 }
                 .del {
@@ -55,6 +53,7 @@
                 .quantity {
                     display: flex;
                     gap: 1rem;
+                    align-items: center;
                     margin-top: 10%;
                     padding-bottom: 30px;
                     a {

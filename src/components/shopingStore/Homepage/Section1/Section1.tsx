@@ -3,6 +3,8 @@ const templates: Record<number, React.LazyExoticComponent<React.FC<any>>> = {
     1: lazy(() => import("./Template1")),
     2: lazy(() => import("./Template2")),
     3: lazy(() => import("./Template3")),
+    4: lazy(() => import("./Template4")),
+    5: lazy(() => import("./Template5")),
 };
 
 const TemplateRenderer = ({

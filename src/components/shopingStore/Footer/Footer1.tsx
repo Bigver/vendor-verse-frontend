@@ -19,22 +19,25 @@ interface ContentProps {
 const Footer1: React.FC<ContentProps> = ({ category, logo, link, link_contact, detail, color, background }) => {
     return (
         <div className='footer-ctn1' style={{ backgroundColor: background, color: color }}>
-            <div className="content1">
+            <div className="content1" data-aos="fade-right"
+                data-aos-duration="1000">
                 <div className="logo">
                     <div className='logo'><Link to={`/store/${link}/homepage`}><img src={logo} alt="" /></Link></div>
                     <p>{detail}</p>
                 </div>
             </div>
-            <div className="content2">
+            <div className="content2" data-aos="fade-right"
+                data-aos-duration="2000">
                 <h1 className='header'>SHOP</h1>
                 <ul>
                     <li><a href={`/store/${link}/products/all`} style={{ color: color }}>all</a></li>
-                    {category.slice(0,4).map((item , index) => (
+                    {category.slice(0, 4).map((item, index) => (
                         <li key={index}><a href={`/store/${link}/products/${item}`} style={{ color: color }}>{item}</a></li>
                     ))}
                 </ul>
             </div>
-            <div className="content3">
+            <div className="content3" data-aos="fade-right"
+                data-aos-duration="3000">
                 <h1 className='header'>SOCIAL</h1>
                 <ul>
                     {link_contact[0] === "/s" ? ""
@@ -48,10 +51,11 @@ const Footer1: React.FC<ContentProps> = ({ category, logo, link, link_contact, d
                     }
                 </ul>
             </div>
-            <div className="content4">
+            <div className="content4" data-aos="fade-right"
+                data-aos-duration="3000">
                 <div className="btn">
                     <Link to={`/store/${link}/products/all`}>
-                        <button>SHOP NOW <GoArrowUpRight/> </button>
+                        <button>SHOP NOW <GoArrowUpRight /> </button>
                     </Link>
 
                 </div>

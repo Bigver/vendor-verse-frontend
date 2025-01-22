@@ -71,7 +71,7 @@ const Contact3: React.FC<ContentProps> = ({ title, line, facebook, instragram, e
         }
     };
     return (
-        <div className='contact-template3'>
+        <div className='contact-template3' data-aos="fade-up" data-aos-duration="1000">
             <div className="card">
                 <div className="form">
                     <form action="" onSubmit={handleSubmit}>

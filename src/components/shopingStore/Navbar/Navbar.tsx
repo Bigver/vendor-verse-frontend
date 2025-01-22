@@ -10,6 +10,7 @@ const templates: Record<number, React.LazyExoticComponent<React.FC<any>>> = {
   1: lazy(() => import("./Navbar1")),
   2: lazy(() => import("./Navbar2")),
   3: lazy(() => import("./Navbar3")),
+  4: lazy(() => import("./Navbar4")),
 };
 
 const TemplateRenderer = ({

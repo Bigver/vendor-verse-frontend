@@ -100,7 +100,7 @@ const ProductPage = () => {
   }
 
   return (
-    <div style={{background : data.background_color , color : data.text_color}}>
+    <div style={{background : data.background_color , color : data.text_color , fontFamily: data.font}}>
       <Navbar logo={data.navbar.logo} category={data.category} link={data.name_store} color={data.navbar.text_color} template={data.navbar.template} background={data.navbar.background_color} />
       <div className='container-product' data-aos="zoom-in" data-aos-duration="1000" style={{marginBottom : '150px'}}>
         <div className="product-detail-container">

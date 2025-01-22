@@ -46,7 +46,7 @@ const HomePage = () => {
     };
     fetchData();
   }, []);
-
+  console.log(data.font)
   return (
 
     <div>
