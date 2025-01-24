@@ -70,7 +70,7 @@ const PackagePage = () => {
                     </div>
                     <div className="text">
                       <h1>{item.name}</h1>
-                      <p>{item.detail} ทดลองใช้ฟรีเดือนแรก</p>
+                      <p>{item.detail}</p>
                       <div className="price">
                         <h1>{item.price}<span> ฿ /month</span></h1>
                       </div>
@@ -79,7 +79,7 @@ const PackagePage = () => {
                         <h2>&#183; {item.product} product</h2>
                         <h2>&#183; {item.duration} day</h2>
                       </div>
-                      <button onClick={() => handleSelect(packages[0])}>FREE</button>
+                      <button onClick={() => handleSelect(item)}>{item.price}</button>
                     </div>
                   </div>
                 ))}
