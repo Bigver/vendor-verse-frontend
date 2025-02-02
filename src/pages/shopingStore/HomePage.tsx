@@ -18,7 +18,6 @@ const HomePage = () => {
   const [data, setData]: any[] = useState([]);
   const [loading, setLoading] = useState(true); // สถานะสำหรับตรวจสอบการโหลด
   const params = useParams();
-
   const [pageData, setPageData] = useState(() => {
     const savedData = localStorage.getItem("pageData");
     return savedData ? JSON.parse(savedData) : [];
@@ -46,7 +45,7 @@ const HomePage = () => {
     };
     fetchData();
   }, []);
-  console.log(data.font)
+  console.log(data)
   return (
 
     <div>

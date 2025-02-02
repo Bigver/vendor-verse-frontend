@@ -48,7 +48,7 @@ const CartPage = () => {
   return (
     <div style={{ fontFamily: data.font }}>
       <Navbar logo={data.navbar.logo} category={data.category} link={data.name_store} color={data.navbar.text_color} template={data.navbar.template} background={data.navbar.background_color} />
-      <div className="cart-ctn1" style={{marginBottom : '150px'}}>
+      <div className="cart-ctn1" style={{ marginBottom: '150px' }}>
         <div className="cart">
           {cartItems.map((item: any, index: any) => (
             <div className="product" key={index}>
@@ -64,8 +64,8 @@ const CartPage = () => {
                     <a onClick={() => updateCart(index, item.quantity)}>-</a>
                     <h3>{item.quantity}</h3>
                     {item.quantity >= item.stock ? <a >+</a> :
-                    <a onClick={() => addToCart(index)}>+</a>
-                  }
+                      <a onClick={() => addToCart(index)}>+</a>
+                    }
                   </div>
                   <a className='del' onClick={() => removeItem(index)}><IoTrashBinOutline size={20} color='red' /></a>
                 </div>
@@ -84,13 +84,20 @@ const CartPage = () => {
                 </div>
               ))}
               <u></u>
+              {data.shipping ?
+                <div className="text" style={{ marginTop: '20px' }}>
+                  <h1>ค่าจัดส่ง</h1>
+                  <h1>฿ {data.shipping.price}</h1>
+                </div> : ""}
+
+
             </div>
             <div className="check-out">
               <div className="text">
                 <h1>TOTAL</h1>
                 <h1>฿ {cartItems
                   .reduce(
-                    (total : any, item : any) => total + item.quantity * item.price,
+                    (total: any, item: any) => total + item.quantity * item.price,
                     0
                   )
                   .toFixed(2)
@@ -105,7 +112,7 @@ const CartPage = () => {
         </div>
       </div>
       <Footer logo={data.navbar.logo} category={data.category} link={data.name_store} link_contact={[data.section6.link_facebook, data.section6.link_instragram, data.section6.link_line]} detail={data.footer.detail_footer} template={data.footer.template} color={data.footer.text_color} background={data.footer.background_color} />
-      </div>
+    </div>
   )
 }
 

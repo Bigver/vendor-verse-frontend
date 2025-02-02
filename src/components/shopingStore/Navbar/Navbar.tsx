@@ -52,6 +52,10 @@ const Navbar: React.FC<ContentProps> = ({ logo, category, link, color, backgroun
       showCancelButton: true,
       confirmButtonText: "ค้นหา",
       cancelButtonText: "ยกเลิก",
+      customClass: {
+        confirmButton: "custom-confirm-button", // กำหนดคลาสปุ่ม "ค้นหา"
+        cancelButton: "custom-cancel-button" // กำหนดคลาสปุ่ม "ยกเลิก"
+      }
     }).then((result) => {
       if (result.isConfirmed) {
         const id = result.value; // รับค่าที่ผู้ใช้กรอก
@@ -63,7 +67,11 @@ const Navbar: React.FC<ContentProps> = ({ logo, category, link, color, backgroun
             Swal.fire({
               title: `ORDER ID : ${id.toString()}`,
               html: `การจัดส่ง : ${response.data.shipping_status} <br> สถานะการชำระเงิน : ${response.data.payment_status}`,
+              customClass: {
+                confirmButton: 'custom-confirm-button' // ใช้คลาสที่กำหนดเอง
+              }
             }); // แสดงค่าใน SweetAlert
+            
           } catch (error) {
             Swal.fire("ไม่มีข้อมูล");
           }
@@ -72,6 +80,8 @@ const Navbar: React.FC<ContentProps> = ({ logo, category, link, color, backgroun
       }
     });
   };
+
+  
   const props = {
     logo: logo,
     category: category,
