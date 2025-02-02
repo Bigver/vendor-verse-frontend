@@ -14,8 +14,9 @@ const CartPage = () => {
     return savedCart ? JSON.parse(savedCart) : [];
   });
 
-
-
+  // const price : any = cartItems.reduce((total: any, item: any) => total + item.quantity * item.price,0)
+  // const totalPrice : any = price + data.shipping.price
+   
 
   useEffect(() => {
     // บันทึก cartItems ลง localStorage ทุกครั้งที่มีการเปลี่ยนแปลง
@@ -95,13 +96,7 @@ const CartPage = () => {
             <div className="check-out">
               <div className="text">
                 <h1>TOTAL</h1>
-                <h1>฿ {cartItems
-                  .reduce(
-                    (total: any, item: any) => total + item.quantity * item.price,
-                    0
-                  )
-                  .toFixed(2)
-                }</h1>
+                <h1>฿ {cartItems.reduce((total: any, item: any) => total + item.quantity * item.price,0) + data.shipping.price}</h1>
               </div>
               <Link to={`/store/${data.name_store}/information`} className='link'>
                 <button>CHECK OUT</button>

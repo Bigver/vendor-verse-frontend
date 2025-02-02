@@ -35,12 +35,9 @@ const Information = () => {
 
   const checkOut = async (e: any) => {
     e.preventDefault();
-    const total = cartItems
-      .reduce(
-        (total: any, item: any) => total + item.quantity * item.price,
-        0
-      )
-      .toFixed(2);
+    const total = cartItems.reduce((total: any, item: any) => total + item.quantity * item.price,0);
+    const totalPrice = total + data.shipping.price
+
     const newArray = cartItems.map((item: any) => ({
       id: item.id,
       img: item.image,
@@ -55,7 +52,7 @@ const Information = () => {
         store_id: data.store_id,
         item_detail: newArray,
         user_detail: formData,
-        price: total,
+        price: totalPrice,
         payment_img: image,
         package_id: data.storeOwner.package_id
       });
