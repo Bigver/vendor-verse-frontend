@@ -21,7 +21,7 @@ const StoreFeature = () => {
                 <h1>เริ่มต้นการใช้งานเว็บไซต์ร้านค้าออนไลน์</h1>
                 <div className="vdo">
                     <ReactPlayer
-                        url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                        url="https://www.youtube.com/watch?v=rTkz0NPybck"
                         controls
                         width="100%"
                         height="300px"

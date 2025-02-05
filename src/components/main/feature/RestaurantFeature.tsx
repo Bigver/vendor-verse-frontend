@@ -19,7 +19,7 @@ const RestaurantFeature = () => {
                 <h1>เริ่มต้นการใช้งานเว็บไซต์ร้านอาหารออนไลน์</h1>
                 <div className="vdo">
                     <ReactPlayer
-                        url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                        url="https://youtu.be/kcnPT-RwKRE"
                         controls
                         width="100%"
                         height="300px"

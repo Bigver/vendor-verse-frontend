@@ -79,7 +79,7 @@ const PackagePage = () => {
                         <h2>&#183; {item.product} product</h2>
                         <h2>&#183; {item.duration} day</h2>
                       </div>
-                      <button onClick={() => handleSelect(item)}>{item.price}</button>
+                      <button onClick={() => handleSelect(item)}>{item.price} ฿</button>
                     </div>
                   </div>
                 ))}

@@ -8,11 +8,7 @@ export const templateRestaurant = [
     theme: "theme-light",
     title: "Hi Welcome...",
     detail: "Find your food",
-    image: [
-      "https://res.cloudinary.com/daiu8h0ep/image/upload/v1728485615/file_20241009T145333109Z.jpg.jpg",
-      "https://res.cloudinary.com/daiu8h0ep/image/upload/v1728485649/file_20241009T145407291Z.jpg.jpg",
-      "https://res.cloudinary.com/daiu8h0ep/image/upload/v1728485679/file_20241009T145438244Z.webp.webp",
-    ],
+    image: [],
     category: ["อาหารจานเดียว", "ของทอด", "ต้ม"],
     category_template: 2,
     category_image: [
@@ -311,11 +307,7 @@ export const templateRestaurant = [
     ],
     category: ["อาหารเกาหลี", "ไก่ทอด", "เครื่องดื่ม"],
     category_template: 1,
-    category_image: [
-      "https://res.cloudinary.com/daiu8h0ep/image/upload/v1736672049/pfcolgfx2w6pfyev5frp.png",
-      "https://cdn-icons-png.freepik.com/256/790/790771.png?ga=GA1.1.753019484.1708109519&semt=ais_hybrid",
-      "https://res.cloudinary.com/daiu8h0ep/image/upload/v1736672759/ajexfz66fkr7k9wwaums.png",
-    ],
+    category_image: [],
     menus: [
       {
         id: 1,
@@ -396,11 +388,7 @@ export const templateRestaurant = [
     ],
     category: ["เครื่องดื่ม", "ของกินเล่น", "อาหาร"],
     category_template: 1,
-    category_image: [
-      "https://res.cloudinary.com/daiu8h0ep/image/upload/v1736677715/pjrxaa7tlzgcsyxes0gx.png",
-      "https://cdn-icons-png.freepik.com/256/790/790771.png?ga=GA1.1.753019484.1708109519&semt=ais_hybrid",
-      "https://cdn-icons-png.freepik.com/256/2144/2144687.png?ga=GA1.1.753019484.1708109519&semt=ais_hybrid",
-    ],
+    category_image: [],
     menus: [
       {
         id: 1,
