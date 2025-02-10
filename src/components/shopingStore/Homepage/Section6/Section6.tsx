@@ -56,7 +56,7 @@ const Contact: React.FC<ContentProps> = ({link_contact , image , title , detail 
 
 
     return (
-        <div className='contact-ctn'>
+        <div className='contact-ctn' style={{backgroundColor : background , color : color}}>
             <TemplateRenderer template={template} {...props} />
         </div>
     )

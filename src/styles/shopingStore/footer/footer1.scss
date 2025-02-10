@@ -16,9 +16,6 @@
         margin-top: 15%;
         .logo {
             text-align: start;
-            p {
-                color: rgb(155, 155, 155);
-            }
             img {
                 width: 30px;
                 padding-bottom: 10px;
@@ -92,6 +89,7 @@
                 color: rgb(5, 4, 4);
                 padding: 10px;
                 width: 150px;
+                border: 0;
                 scale: 0.9;
                 cursor: pointer;
                 transition: 1s;

@@ -33,17 +33,7 @@ const Navbar4: React.FC<ContentProps> = ({ logo, category, link, color, backgrou
       </div>
       <div className="link">
         <ul>
-          <li>
-            <a href={`/store/${link}/homepage`} style={{ color: color }}>
-              Home
-            </a>
-          </li>
-          <li>
-            <a href={`/store/${link}/products/all`} style={{ color: color }}>
-              SHOp
-            </a>
-          </li>
-          {category.slice(0, 3).map((item, index) => (
+          {category.slice(0, 4).map((item, index) => (
             <li key={index}>
               <a
                 href={`/store/${link}/products/${item}`}

@@ -4,7 +4,6 @@
     justify-content: center;
     align-items: center;
     .card{
-        background-color: rgb(253, 253, 253);
         max-width: 80%;
         height: 80%;
         border-radius: 20px;
@@ -16,9 +15,6 @@
             display: grid;
             .text1{
                 display: grid;
-                p{
-                    color: rgb(158, 154, 154);
-                }
             }
             .text2{
                 display: grid;

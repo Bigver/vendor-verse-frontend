@@ -124,7 +124,7 @@ const ProductPage = () => {
                 </div>
                 <div className='text' style={{color : data.text_color}}>
                   <h1>{productData.name}</h1>
-                  <p>{productData.detail} Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero quia fugiat deleniti mollitia a voluptates doloremque error. Corrupti in earum similique, ratione quidem illum maiores porro. Incidunt enim reprehenderit aperiam.</p>
+                  <p>{productData.detail}</p>
                   <h2>฿{productData.price}</h2>
                   {productData.product_more1.length > 0 && productData.product_more2.length > 0
                     && (<h3 style={{ marginTop: '10px' }}>select option</h3>

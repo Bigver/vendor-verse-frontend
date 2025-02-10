@@ -42,9 +42,11 @@
                 font-weight: bolder;
                 background-color: black;
                 color: white;
-                padding: 15px;
-                width: 170px;
+                padding: 17px;
+                width: 180px;
                 scale: 0.9;
+                border-radius: 10px;
+                border: 0;
                 transition: 1s;
             }
             button:hover {

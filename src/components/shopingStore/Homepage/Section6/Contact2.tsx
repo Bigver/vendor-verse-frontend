@@ -17,7 +17,7 @@ interface ContentProps {
 }
 
 
-const Contact2: React.FC<ContentProps> = ({ email, phone, title, image, store_id }) => {
+const Contact2: React.FC<ContentProps> = ({ email, phone, title, image, store_id , background , color }) => {
     const [formData, setFormData] = useState({
         name: "",
         phone: "",
@@ -97,11 +97,11 @@ const Contact2: React.FC<ContentProps> = ({ email, phone, title, image, store_id
                             value={formData.message}
                             onChange={handleChange}
                             required />
-                        <button type='submit'>Send Message</button>
+                        <button type='submit' style={{backgroundColor : color , color : background}}>Send Message</button>
                     </form>
                     <div className="text">
-                        <h3><MdEmail color='black' size={30} /> {email}</h3>
-                        <h3><FaPhoneAlt color='black' size={20} /> {phone}</h3>
+                        <h3><MdEmail color={color} size={30}/> {email}</h3>
+                        <h3><FaPhoneAlt color={color} size={20} /> {phone}</h3>
                     </div>
                 </div>
             </div>
