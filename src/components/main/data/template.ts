@@ -71,13 +71,14 @@ export const templateStore = [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet recusandae quo, perferendis illum, praesentium aspernatur cupiditate facere hic a voluptatem. Quasi facilis autem cupiditate natus sequi iure, et exercitationem.t",
       image:
         "https://static.wixstatic.com/media/c837a6_0abdcf0c6d304993ad5d02f7bbd366bf~mv2.jpg/v1/fill/w_369,h_491,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/c837a6_0abdcf0c6d304993ad5d02f7bbd366bf~mv2.jpg",
-      background_color: "#000000",
-      text_color: "#fff",
+      background_color: "#fff",
+      text_color: "#000000",
       template: 2,
       use_section: "yes",
     },
     footer: {
-      detail_footer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet recusandae quo, perferendis illum, praesentium aspernatur cupiditate facere hic a voluptatem. Quasi facilis autem cupiditate natus sequi iure, et exercitationem.t",
+      detail_footer:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet recusandae quo, perferendis illum, praesentium aspernatur cupiditate facere hic a voluptatem. Quasi facilis autem cupiditate natus sequi iure, et exercitationem.t",
       background_color: "#fff",
       text_color: "#000000",
       template: 1,
@@ -85,45 +86,57 @@ export const templateStore = [
     product: [
       {
         name: "MARA COAT",
-        detail:  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet recusandae quo, perferendis illum, praesentium aspernatur cupiditate facere hic a voluptatem. Quasi facilis autem cupiditate natus sequi iure, et exercitationem.t",
+        detail:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet recusandae quo, perferendis illum, praesentium aspernatur cupiditate facere hic a voluptatem. Quasi facilis autem cupiditate natus sequi iure, et exercitationem.t",
         stock: 10,
-        price : 2000,
-        category : "men",
-        product_img: ["https://static.wixstatic.com/media/c837a6_77d364e6cbaa4b1c922134dbe24b917c~mv2.jpg/v1/fill/w_1217,h_1217,q_90/c837a6_77d364e6cbaa4b1c922134dbe24b917c~mv2.webp"],
-        product_more1 : ["S" , "X" , "L" , "XL"],
-        product_more2 : ["black" , "white" , "green" , "red"]
-      }, 
+        price: 2000,
+        category: "men",
+        product_img: [
+          "https://static.wixstatic.com/media/c837a6_77d364e6cbaa4b1c922134dbe24b917c~mv2.jpg/v1/fill/w_1217,h_1217,q_90/c837a6_77d364e6cbaa4b1c922134dbe24b917c~mv2.webp",
+        ],
+        product_more1: ["S", "X", "L", "XL"],
+        product_more2: ["black", "white", "green", "red"],
+      },
       {
         name: "LAPTOP CASE",
-        detail:  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet recusandae quo, perferendis illum, praesentium aspernatur cupiditate facere hic a voluptatem. Quasi facilis autem cupiditate natus sequi iure, et exercitationem.t",
+        detail:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet recusandae quo, perferendis illum, praesentium aspernatur cupiditate facere hic a voluptatem. Quasi facilis autem cupiditate natus sequi iure, et exercitationem.t",
         stock: 10,
-        price : 1000,
-        category : "accessories",
-        product_img: ["https://static.wixstatic.com/media/c837a6_311d8a6dc7be4140831ba186ddfb8612~mv2.jpg/v1/fill/w_1217,h_1217,q_90/c837a6_311d8a6dc7be4140831ba186ddfb8612~mv2.webp"],
-        product_more1 : ["S" , "X" , "L" , "XL"],
-        product_more2 : ["black" , "white" , "green" , "red"]
-      }, 
+        price: 1000,
+        category: "accessories",
+        product_img: [
+          "https://static.wixstatic.com/media/c837a6_311d8a6dc7be4140831ba186ddfb8612~mv2.jpg/v1/fill/w_1217,h_1217,q_90/c837a6_311d8a6dc7be4140831ba186ddfb8612~mv2.webp",
+        ],
+        product_more1: ["S", "X", "L", "XL"],
+        product_more2: ["black", "white", "green", "red"],
+      },
       {
         name: "SNUG JACKET",
-        detail:  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet recusandae quo, perferendis illum, praesentium aspernatur cupiditate facere hic a voluptatem. Quasi facilis autem cupiditate natus sequi iure, et exercitationem.t",
+        detail:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet recusandae quo, perferendis illum, praesentium aspernatur cupiditate facere hic a voluptatem. Quasi facilis autem cupiditate natus sequi iure, et exercitationem.t",
         stock: 10,
-        price : 3000,
-        category : "accessories",
-        product_img: ["https://static.wixstatic.com/media/c837a6_dced1965a9694686927b75c805908437~mv2.jpg/v1/fill/w_1470,h_1470,q_90/c837a6_dced1965a9694686927b75c805908437~mv2.webp"],
-        product_more1 : ["S" , "X" , "L" , "XL"],
-        product_more2 : ["black" , "white" , "green" , "red"]
-      }, 
+        price: 3000,
+        category: "accessories",
+        product_img: [
+          "https://static.wixstatic.com/media/c837a6_dced1965a9694686927b75c805908437~mv2.jpg/v1/fill/w_1470,h_1470,q_90/c837a6_dced1965a9694686927b75c805908437~mv2.webp",
+        ],
+        product_more1: ["S", "X", "L", "XL"],
+        product_more2: ["black", "white", "green", "red"],
+      },
       {
         id: 4,
         name: "FROST FIT",
-        detail:  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet recusandae quo, perferendis illum, praesentium aspernatur cupiditate facere hic a voluptatem. Quasi facilis autem cupiditate natus sequi iure, et exercitationem.t",
+        detail:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet recusandae quo, perferendis illum, praesentium aspernatur cupiditate facere hic a voluptatem. Quasi facilis autem cupiditate natus sequi iure, et exercitationem.t",
         stock: 10,
-        price : 3000,
-        category : "accessories",
-        product_img: ["https://static.wixstatic.com/media/c837a6_5ebdfa9515e04c2f99cd11761e8d969e~mv2.jpg/v1/fill/w_1217,h_1217,q_90/c837a6_5ebdfa9515e04c2f99cd11761e8d969e~mv2.webp"],
-        product_more1 : ["S" , "X" , "L" , "XL"],
-        product_more2 : ["black" , "white" , "green" , "red"]
-      }, 
+        price: 3000,
+        category: "accessories",
+        product_img: [
+          "https://static.wixstatic.com/media/c837a6_5ebdfa9515e04c2f99cd11761e8d969e~mv2.jpg/v1/fill/w_1217,h_1217,q_90/c837a6_5ebdfa9515e04c2f99cd11761e8d969e~mv2.webp",
+        ],
+        product_more1: ["S", "X", "L", "XL"],
+        product_more2: ["black", "white", "green", "red"],
+      },
     ],
   },
   {
@@ -205,8 +218,8 @@ export const templateStore = [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet recusandae quo, perferendis illum, praesentium aspernatur cupiditate facere hic a voluptatem. Quasi facilis autem cupiditate natus sequi iure, et exercitationem.t",
       image:
         "https://static.wixstatic.com/media/c837a6_3e57aa37f05c428fbe93d96301ffe50c~mv2.jpg/v1/fill/w_940,h_826,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ModelYellow.jpg",
-      background_color: "#000000",
-      text_color: "#fff",
+      background_color: "#fff",
+      text_color: "#000000",
       template: 3,
       use_section: "yes",
     },
@@ -219,45 +232,57 @@ export const templateStore = [
     product: [
       {
         name: "JP Exmax Phantom, 5G, 16GB",
-        detail:  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet recusandae quo, perferendis illum, praesentium aspernatur cupiditate facere hic a voluptatem. Quasi facilis autem cupiditate natus sequi iure, et exercitationem.t",
+        detail:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet recusandae quo, perferendis illum, praesentium aspernatur cupiditate facere hic a voluptatem. Quasi facilis autem cupiditate natus sequi iure, et exercitationem.t",
         stock: 10,
-        price : 2000,
-        category : "Mobile",
-        product_img: ["https://static.wixstatic.com/media/c22c23_229835b7ed254c8c95f2b90ef1404ded~mv2.jpg/v1/fill/w_363,h_483,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/c22c23_229835b7ed254c8c95f2b90ef1404ded~mv2.jpg"],
-        product_more1 : ["64 GB" , "128 GB"],
-        product_more2 : []
-      }, 
+        price: 2000,
+        category: "Mobile",
+        product_img: [
+          "https://static.wixstatic.com/media/c22c23_229835b7ed254c8c95f2b90ef1404ded~mv2.jpg/v1/fill/w_363,h_483,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/c22c23_229835b7ed254c8c95f2b90ef1404ded~mv2.jpg",
+        ],
+        product_more1: ["64 GB", "128 GB"],
+        product_more2: [],
+      },
       {
         name: "EXE Mini Drone With Sky Controller",
-        detail:  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet recusandae quo, perferendis illum, praesentium aspernatur cupiditate facere hic a voluptatem. Quasi facilis autem cupiditate natus sequi iure, et exercitationem.t",
+        detail:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet recusandae quo, perferendis illum, praesentium aspernatur cupiditate facere hic a voluptatem. Quasi facilis autem cupiditate natus sequi iure, et exercitationem.t",
         stock: 10,
-        price : 1000,
-        category : "Drones",
-        product_img: ["https://static.wixstatic.com/media/c22c23_607618f163cf465da48e3393dbcd871e~mv2.jpg/v1/fill/w_363,h_483,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/c22c23_607618f163cf465da48e3393dbcd871e~mv2.jpg"],
-        product_more1 : [],
-        product_more2 : []
-      }, 
+        price: 1000,
+        category: "Drones",
+        product_img: [
+          "https://static.wixstatic.com/media/c22c23_607618f163cf465da48e3393dbcd871e~mv2.jpg/v1/fill/w_363,h_483,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/c22c23_607618f163cf465da48e3393dbcd871e~mv2.jpg",
+        ],
+        product_more1: [],
+        product_more2: [],
+      },
       {
         name: "Drums Pro Wireless On-Ear Headphones",
-        detail:  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet recusandae quo, perferendis illum, praesentium aspernatur cupiditate facere hic a voluptatem. Quasi facilis autem cupiditate natus sequi iure, et exercitationem.t",
+        detail:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet recusandae quo, perferendis illum, praesentium aspernatur cupiditate facere hic a voluptatem. Quasi facilis autem cupiditate natus sequi iure, et exercitationem.t",
         stock: 10,
-        price : 3000,
-        category : "Headphones",
-        product_img: ["https://static.wixstatic.com/media/c22c23_31759778ff1248978471f8cc44c24f9d~mv2.png/v1/fill/w_363,h_483,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c22c23_31759778ff1248978471f8cc44c24f9d~mv2.png"],
-        product_more1 : [],
-        product_more2 : []
-      }, 
+        price: 3000,
+        category: "Headphones",
+        product_img: [
+          "https://static.wixstatic.com/media/c22c23_31759778ff1248978471f8cc44c24f9d~mv2.png/v1/fill/w_363,h_483,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c22c23_31759778ff1248978471f8cc44c24f9d~mv2.png",
+        ],
+        product_more1: [],
+        product_more2: [],
+      },
       {
         id: 4,
         name: "Pilates 14 Touch Screen Laptop 12GB Memory",
-        detail:  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet recusandae quo, perferendis illum, praesentium aspernatur cupiditate facere hic a voluptatem. Quasi facilis autem cupiditate natus sequi iure, et exercitationem.t",
+        detail:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet recusandae quo, perferendis illum, praesentium aspernatur cupiditate facere hic a voluptatem. Quasi facilis autem cupiditate natus sequi iure, et exercitationem.t",
         stock: 10,
-        price : 12000,
-        category : "Computers",
-        product_img: ["https://static.wixstatic.com/media/c22c23_01a8a61a9f6c4e3a97711b8c684050e9~mv2.png/v1/fill/w_363,h_483,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c22c23_01a8a61a9f6c4e3a97711b8c684050e9~mv2.png"],
-        product_more1 : [],
-        product_more2 : []
-      }, 
+        price: 12000,
+        category: "Computers",
+        product_img: [
+          "https://static.wixstatic.com/media/c22c23_01a8a61a9f6c4e3a97711b8c684050e9~mv2.png/v1/fill/w_363,h_483,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c22c23_01a8a61a9f6c4e3a97711b8c684050e9~mv2.png",
+        ],
+        product_more1: [],
+        product_more2: [],
+      },
     ],
   },
   {
@@ -331,8 +356,8 @@ export const templateStore = [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet recusandae quo, perferendis illum, praesentium aspernatur cupiditate facere hic a voluptatem. Quasi facilis autem cupiditate natus sequi iure, et exercitationem.t",
       image:
         "https://static.wixstatic.com/media/c837a6_3e57aa37f05c428fbe93d96301ffe50c~mv2.jpg/v1/fill/w_940,h_826,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ModelYellow.jpg",
-      background_color: "#000000",
-      text_color: "#fff",
+      background_color: "#fff",
+      text_color: "#000000",
       template: 2,
       use_section: "yes",
     },
@@ -345,45 +370,57 @@ export const templateStore = [
     product: [
       {
         name: "hydraglow moisturizer",
-        detail:  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet recusandae quo, perferendis illum, praesentium aspernatur cupiditate facere hic a voluptatem. Quasi facilis autem cupiditate natus sequi iure, et exercitationem.t",
+        detail:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet recusandae quo, perferendis illum, praesentium aspernatur cupiditate facere hic a voluptatem. Quasi facilis autem cupiditate natus sequi iure, et exercitationem.t",
         stock: 10,
-        price : 2000,
-        category : "face",
-        product_img: ["https://static.wixstatic.com/media/c837a6_7a7a62482b6f4d6c971de6bd2740b63f~mv2.jpg/v1/fill/w_1272,h_1272,q_90/c837a6_7a7a62482b6f4d6c971de6bd2740b63f~mv2.webp"],
-        product_more1 : [],
-        product_more2 : []
-      }, 
+        price: 2000,
+        category: "face",
+        product_img: [
+          "https://static.wixstatic.com/media/c837a6_7a7a62482b6f4d6c971de6bd2740b63f~mv2.jpg/v1/fill/w_1272,h_1272,q_90/c837a6_7a7a62482b6f4d6c971de6bd2740b63f~mv2.webp",
+        ],
+        product_more1: [],
+        product_more2: [],
+      },
       {
         name: "radiance cleanser",
-        detail:  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet recusandae quo, perferendis illum, praesentium aspernatur cupiditate facere hic a voluptatem. Quasi facilis autem cupiditate natus sequi iure, et exercitationem.t",
+        detail:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet recusandae quo, perferendis illum, praesentium aspernatur cupiditate facere hic a voluptatem. Quasi facilis autem cupiditate natus sequi iure, et exercitationem.t",
         stock: 10,
-        price : 1000,
-        category : "face",
-        product_img: ["https://static.wixstatic.com/media/c837a6_1698cda8e3074215896c10690dffa017~mv2.jpg/v1/fill/w_1272,h_1272,q_90/c837a6_1698cda8e3074215896c10690dffa017~mv2.webp"],
-        product_more1 : [],
-        product_more2 : []
-      }, 
+        price: 1000,
+        category: "face",
+        product_img: [
+          "https://static.wixstatic.com/media/c837a6_1698cda8e3074215896c10690dffa017~mv2.jpg/v1/fill/w_1272,h_1272,q_90/c837a6_1698cda8e3074215896c10690dffa017~mv2.webp",
+        ],
+        product_more1: [],
+        product_more2: [],
+      },
       {
         name: "deep hydration cream",
-        detail:  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet recusandae quo, perferendis illum, praesentium aspernatur cupiditate facere hic a voluptatem. Quasi facilis autem cupiditate natus sequi iure, et exercitationem.t",
+        detail:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet recusandae quo, perferendis illum, praesentium aspernatur cupiditate facere hic a voluptatem. Quasi facilis autem cupiditate natus sequi iure, et exercitationem.t",
         stock: 10,
-        price : 3000,
-        category : "body",
-        product_img: ["https://static.wixstatic.com/media/c837a6_408d09d418cb43fd9b2d6345f4ee7713~mv2.jpg/v1/fill/w_1272,h_1272,q_90/c837a6_408d09d418cb43fd9b2d6345f4ee7713~mv2.webp"],
-        product_more1 : [],
-        product_more2 : []
-      }, 
+        price: 3000,
+        category: "body",
+        product_img: [
+          "https://static.wixstatic.com/media/c837a6_408d09d418cb43fd9b2d6345f4ee7713~mv2.jpg/v1/fill/w_1272,h_1272,q_90/c837a6_408d09d418cb43fd9b2d6345f4ee7713~mv2.webp",
+        ],
+        product_more1: [],
+        product_more2: [],
+      },
       {
         id: 4,
         name: "repairing hair mask",
-        detail:  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet recusandae quo, perferendis illum, praesentium aspernatur cupiditate facere hic a voluptatem. Quasi facilis autem cupiditate natus sequi iure, et exercitationem.t",
+        detail:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet recusandae quo, perferendis illum, praesentium aspernatur cupiditate facere hic a voluptatem. Quasi facilis autem cupiditate natus sequi iure, et exercitationem.t",
         stock: 10,
-        price : 3000,
-        category : "hair",
-        product_img: ["https://static.wixstatic.com/media/c837a6_fd533b4ff6b44d5cb146fc23c7b3e09a~mv2.jpg/v1/fill/w_1470,h_1470,q_90/c837a6_fd533b4ff6b44d5cb146fc23c7b3e09a~mv2.webp"],
-        product_more1 : [],
-        product_more2 : []
-      }, 
+        price: 3000,
+        category: "hair",
+        product_img: [
+          "https://static.wixstatic.com/media/c837a6_fd533b4ff6b44d5cb146fc23c7b3e09a~mv2.jpg/v1/fill/w_1470,h_1470,q_90/c837a6_fd533b4ff6b44d5cb146fc23c7b3e09a~mv2.webp",
+        ],
+        product_more1: [],
+        product_more2: [],
+      },
     ],
   },
 ];

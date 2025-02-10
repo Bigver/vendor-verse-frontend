@@ -1,4 +1,4 @@
-import  { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Navbar from '../../../components/main/Navbar'
 import { jwtDecode } from "jwt-decode";
 import axios from 'axios';
@@ -15,7 +15,7 @@ const Step4Page = () => {
   const cartItems = savedCart ? JSON.parse(savedCart) : [];
   const token: any = localStorage.getItem('token');
   let user: any
-  
+
   useEffect(() => {
     if (cartItems[0].package.id != 0 && cartItems[0].permission === false) {
       navigate('/step2')
@@ -31,7 +31,13 @@ const Step4Page = () => {
     }
   }, []);
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleSelect = async (data: any) => {
+    if (isSubmitting) {
+      toast.error("กรุณารอสักครู่");
+      return
+    }; // ป้องกันการส่งซ้ำ
     const currentDate = new Date();
     const expirationDate = new Date(currentDate);
     expirationDate.setDate(currentDate.getDate() + 31);
@@ -39,9 +45,13 @@ const Step4Page = () => {
     if (token) {
       user = jwtDecode(token);
     }
-    if(data === ''){
+    if (data === '') {
       toast.warning('กรอกชื่อร้านค้า');
+      return
     }
+
+    setIsSubmitting(true); // ตั้งค่าเป็นกำลังส่ง
+
     try {
       const response = await axios.post(`${requestMethod}/storeOwner/create/store`, {
         user_id: user.id,
@@ -52,17 +62,20 @@ const Step4Page = () => {
         permission: cartItems[0].permission,
         price: cartItems[0].package.price,
         image: cartItems[0].image,
-        trans_ref : cartItems[0].trans_ref
+        trans_ref: cartItems[0].trans_ref
       });
       localStorage.removeItem('cartItems');
       toast.success('create store successfu');
       window.location.href = `/step5/${cartItems[0].selectShop}/${response.data.id}/${response.data.user_id}`
-    } catch (error:any) {
-      if(error.response.data.message){
+    } catch (error: any) {
+      if (error.response.data.message) {
         toast.error(error.response.data.message);
-      }else{
+      } else {
         toast.error("เกิดข้อผิดพลาด โปรดลองอีกครั้ง");
       }
+    }
+    finally {
+      setIsSubmitting(false); // ปลดล็อกให้สามารถส่งได้อีกครั้งเมื่อเสร็จสิ้น
     }
   }
 
@@ -82,7 +95,7 @@ const Step4Page = () => {
             <li>PAYMENT</li>
             <li>SELECT WEBSITE</li>
             <li className="is-active">NAME WEBSITE</li>
-            <li>SELECT TEMPLATE</li>            
+            <li>SELECT TEMPLATE</li>
             <li>FINISH</li>
           </ul>
         </div>
