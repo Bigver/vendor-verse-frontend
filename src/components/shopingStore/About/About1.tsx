@@ -14,7 +14,7 @@ const About1: React.FC<ContentProps> = ({ image, title, detail, link, color, bac
   return (
     <div style={{background : background}}>
       <div className='about-template1' style={{ backgroundColor: background }}>
-        <div className="img" data-aos="zoom-out" data-aos-duration="1000">
+        <div className="img" data-aos="fade-up" data-aos-duration="1000">
           <img src={image[0]} alt="" />
         </div>
         <div className="text" style={{ color: color }}>

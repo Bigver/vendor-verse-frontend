@@ -45,9 +45,7 @@ const HomePage = () => {
     };
     fetchData();
   }, []);
-  console.log(data)
   return (
-
     <div>
       {loading ? <Loading/> :
         <div style={{ fontFamily: data.font }}>

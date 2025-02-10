@@ -21,7 +21,7 @@ const About2: React.FC<ContentProps> = ({ image, title, detail, link, color, bac
             <button data-aos="fade-up" data-aos-duration="1200" style={{ backgroundColor: color, color: background }}>Shop Now  <GoArrowUpRight /></button>
           </Link>
         </div>
-        <div className="img" data-aos="zoom-out" data-aos-duration="1000">
+        <div className="img" data-aos="fade-up" data-aos-duration="1000">
           <img src={image[0]} alt="" />
         </div>
       </div>
