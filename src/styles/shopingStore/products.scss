@@ -88,17 +88,23 @@
             justify-content: center;
             gap: 0rem;
             .card{
-                width: 200px;
+                width: 180px;
                 scale: 0.8;
-                margin-left: -3%;
                 .img{
                     img{
+                        border-radius: 5px;
                         width: 200px;
                     }
                 }
             }
             .card:hover{
                 scale: 0.9;
+            }
+        }
+        @media only screen and (max-width: 350px) {
+            .product{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
             }
         }
     }
