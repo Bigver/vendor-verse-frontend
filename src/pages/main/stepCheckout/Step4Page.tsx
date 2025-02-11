@@ -35,7 +35,7 @@ const Step4Page = () => {
 
   const handleSelect = async (data: any) => {
     if (isSubmitting) {
-      toast.error("กรุณารอสักครู่");
+      toast.warning("กรุณารอสักครู่");
       return
     }; // ป้องกันการส่งซ้ำ
     const currentDate = new Date();

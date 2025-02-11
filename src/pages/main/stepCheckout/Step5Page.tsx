@@ -14,7 +14,7 @@ const Step5Page = () => {
 
     const handleSubmit = async (item: any) => {
         if (isSubmitting) {
-            toast.error("กรุณารอสักครู่");
+            toast.warning("กรุณารอสักครู่");
             return
         }; // ป้องกันการส่งซ้ำ
         setIsSubmitting(true); // ตั้งค่าเป็นกำลังส่ง

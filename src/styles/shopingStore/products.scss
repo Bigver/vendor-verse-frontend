@@ -80,7 +80,7 @@
             scale: 1;
         }
     }
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 900px) {
         .product{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -101,10 +101,28 @@
                 scale: 0.9;
             }
         }
-        @media only screen and (max-width: 350px) {
+        @media only screen and (max-width: 480px) {
             .product{
                 display: grid;
                 grid-template-columns: repeat(1, 1fr);
+                .card{
+                    width: 100%;
+                    height: 500px;
+                    .img{
+                        display: grid;
+                        justify-content: center;
+                        img{
+                            width: 350px;
+                            height: 440px;
+                            border-radius: 20px;
+                        }
+                    }
+                    .text{
+                        margin-left: 5%;
+                        justify-content: center;
+                    }
+                  
+                }
             }
         }
     }

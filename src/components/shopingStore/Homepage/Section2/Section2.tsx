@@ -60,7 +60,7 @@ const Popular: React.FC<ContentProps> = ({ link, color, background, template, st
             <div className="text" data-aos="fade-up" data-aos-duration="500">
                 <h1 style={{ color: color }}>New Arrivals</h1>
                 <div className='btn'>
-                    <a href="" style={{ color: color, borderColor: color , cursor : 'pointer' }}>view more</a>
+                    <a href="products/all" style={{ color: color, borderColor: color , cursor : 'pointer' }}>view more</a>
                 </div>
             </div>
             {loading ? "LOADING" :

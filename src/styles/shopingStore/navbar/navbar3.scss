@@ -27,6 +27,7 @@
             font-size: 1.5rem;
         }
         img {
+            margin-top: 10px;
             width: 50px;
             scale: 1.2;
             height: 50px;
@@ -41,6 +42,7 @@
                 list-style: none;
             }
             a {
+                font-weight: bolder;
                 text-decoration: none;
                 text-transform: uppercase;
                 transition: 50s ease-in;

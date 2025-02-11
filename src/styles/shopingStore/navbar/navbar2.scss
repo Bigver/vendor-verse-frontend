@@ -22,6 +22,7 @@
             font-size: 1.5rem;
         }
         img {
+            margin-top: 10px;
             width: 50px;
             scale: 1.2;
             height: 50px;
@@ -39,6 +40,8 @@
                 text-decoration: none;
                 text-transform: uppercase;
                 transition: 50s ease-in;
+                // font-weight: bolder;
+                font-size: 2.1vh;
             }
             a:hover {
                 border-bottom: 2px solid rgb(126, 126, 126);
