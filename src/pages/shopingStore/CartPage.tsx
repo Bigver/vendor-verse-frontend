@@ -16,7 +16,7 @@ const CartPage = () => {
 
   // const price : any = cartItems.reduce((total: any, item: any) => total + item.quantity * item.price,0)
   // const totalPrice : any = price + data.shipping.price
-   
+
 
   useEffect(() => {
     // บันทึก cartItems ลง localStorage ทุกครั้งที่มีการเปลี่ยนแปลง
@@ -57,6 +57,8 @@ const CartPage = () => {
                 <div className="img"><img src={item.image} alt="" /></div>
                 <div className="text">
                   <h1>{item.name}</h1>
+                  {item.option1 ? <p style={{fontSize : '0.9rem'}}>- {item.option1}</p>: ""}
+                  {item.option2 ? <p style={{fontSize : '0.9rem'}}>- {item.option2}</p>: ""}
                   <div className="text-1">
                     <p>฿{item.price}</p>
                   </div>
@@ -96,7 +98,7 @@ const CartPage = () => {
             <div className="check-out">
               <div className="text">
                 <h1>TOTAL</h1>
-                <h1>฿ {cartItems.reduce((total: any, item: any) => total + item.quantity * item.price,0) + data.shipping.price}</h1>
+                <h1>฿ {cartItems.reduce((total: any, item: any) => total + item.quantity * item.price, 0) + data.shipping.price}</h1>
               </div>
               <Link to={`/store/${data.name_store}/information`} className='link'>
                 <button>CHECK OUT</button>

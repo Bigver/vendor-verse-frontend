@@ -5,6 +5,7 @@ import { requestMethod } from "../../requestMethod";
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import Loading from '../../components/main/Loading';
 
 const ProductPage = () => {
   const [index, setIndex] = useState(0);
@@ -100,84 +101,84 @@ const ProductPage = () => {
   }
 
   return (
-    <div style={{background : data.background_color , color : data.text_color , fontFamily: data.font}}>
+    <div style={{ background: data.background_color, color: data.text_color, fontFamily: data.font }}>
       <Navbar logo={data.navbar.logo} category={data.category} link={data.name_store} color={data.navbar.text_color} template={data.navbar.template} background={data.navbar.background_color} />
-      <div className='container-product' data-aos="zoom-in" data-aos-duration="1000" style={{marginBottom : '150px'}}>
-        <div className="product-detail-container">
-          {loading ? "LOADING" :
-            <>
-              <div className="product">
-                <div className='img-pd'>
-                  <div className="image-container">
-                    <img src={productData.product_img && productData.product_img[index]} className="product-detail-image" />
-                  </div>
-                  <div className="small-images-container">
-                    {productData.product_img?.map((item: any, i: any) => (
-                      <img
-                        key={i}
-                        src={item}
-                        className={i === index ? 'small-image selected-image' : 'small-image'}
-                        onMouseEnter={() => setIndex(i)}
-                      />
-                    ))}
-                  </div>
+      <div className='container-product' data-aos="zoom-in" data-aos-duration="1000" style={{ marginBottom: '150px' }}>
+        {loading ? <div style={{ display: 'grid', justifyContent: 'center' }}><Loading /></div>
+          :
+          <div className="product-detail-container">
+            <div className="product">
+              <div className='img-pd'>
+                <div className="image-container">
+                  <img src={productData.product_img && productData.product_img[index]} className="product-detail-image" />
                 </div>
-                <div className='text' style={{color : data.text_color}}>
-                  <h1>{productData.name}</h1>
-                  <p>{productData.detail}</p>
-                  <h2>฿{productData.price}</h2>
-                  {productData.product_more1.length > 0 && productData.product_more2.length > 0
-                    && (<h3 style={{ marginTop: '10px' }}>select option</h3>
-                    )}
-                  <div style={{ display: 'flex', gap: '1rem' }} className='select'>
-                    {productData.product_more1.length > 0 && (
-                      <div className='select'>
-                        <select value={selectedOption} onChange={handleChange}>
-                          <option value="" disabled>Select an option</option>
-                          {productData.product_more1.map((option: any) => (
-                            <option key={option} value={option}>
-                              {option}
-                            </option>
-                          ))}
-                        </select>
-                      </div>
-                    )}
-                    {productData.product_more2.length > 0 && (
-                      <div className='select'>
-                        <select value={selectedOption2} onChange={handleChange2}>
-                          <option value="" disabled>Select an option</option>
-                          {productData.product_more2.map((option: any) => (
-                            <option key={option} value={option}>
-                              {option}
-                            </option>
-                          ))}
-                        </select>
-                      </div>
-                    )}
-                  </div>
-
-                  <div className='btn-ctn'>
-                    <div className="quantity">
-                      <a onClick={decrease}>-</a>
-                      <h3>{quantity}</h3>
-                      {quantity >= productData.stock ? <a >+</a> :
-                        <a onClick={increase}>+</a>
-                      }
-                    </div>
-                    <div className='btn'>
-                      {productData.stock <= 0 ? <button onClick={outStock}>ADD TO CARD</button> :
-                        <button onClick={() => addToCart(productData)}>ADD TO CARD</button>
-                      }
-                    </div>
-                  </div>
-
+                <div className="small-images-container">
+                  {productData.product_img?.map((item: any, i: any) => (
+                    <img
+                      key={i}
+                      src={item}
+                      className={i === index ? 'small-image selected-image' : 'small-image'}
+                      onMouseEnter={() => setIndex(i)}
+                    />
+                  ))}
                 </div>
               </div>
-            </>}
-        </div>
+              <div className='text' style={{ color: data.text_color }}>
+                <h1>{productData.name}</h1>
+                <p>{productData.detail}</p>
+                <h2>฿{productData.price}</h2>
+                {productData.product_more1.length > 0 && productData.product_more2.length > 0
+                  && (<h3 style={{ marginTop: '10px' }}>select option</h3>
+                  )}
+                <div style={{ display: 'flex', gap: '1rem' }} className='select'>
+                  {productData.product_more1.length > 0 && (
+                    <div className='select'>
+                      <select value={selectedOption} onChange={handleChange}>
+                        <option value="" disabled>Select an option</option>
+                        {productData.product_more1.map((option: any) => (
+                          <option key={option} value={option}>
+                            {option}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+                  )}
+                  {productData.product_more2.length > 0 && (
+                    <div className='select'>
+                      <select value={selectedOption2} onChange={handleChange2}>
+                        <option value="" disabled>Select an option</option>
+                        {productData.product_more2.map((option: any) => (
+                          <option key={option} value={option}>
+                            {option}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+                  )}
+                </div>
+
+                <div className='btn-ctn'>
+                  <div className="quantity">
+                    <a onClick={decrease}>-</a>
+                    <h3>{quantity}</h3>
+                    {quantity >= productData.stock ? <a >+</a> :
+                      <a onClick={increase}>+</a>
+                    }
+                  </div>
+                  <div className='btn'>
+                    {productData.stock <= 0 ? <button onClick={outStock}>ADD TO CARD</button> :
+                      <button onClick={() => addToCart(productData)}>ADD TO CARD</button>
+                    }
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        }
       </div>
       <Footer logo={data.navbar.logo} category={data.category} link={data.name_store} link_contact={[data.section6.link_facebook, data.section6.link_instragram, data.section6.link_line]} detail={data.footer.detail_footer} template={data.footer.template} color={data.footer.text_color} background={data.footer.background_color} />
-      </div>)
+    </div>)
 }
 
 export default ProductPage
