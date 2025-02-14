@@ -8,6 +8,7 @@ import { useParams } from 'react-router-dom';
 import { IoSearchOutline } from "react-icons/io5";
 import { VscSettings } from "react-icons/vsc";
 import Loading from "../../components/main/Loading";
+import { IoIosCloseCircle } from "react-icons/io";
 
 const ProductsPage = () => {
   const pageData: any = localStorage.getItem('pageData');
@@ -69,8 +70,8 @@ const ProductsPage = () => {
           </div>
           <div className={`filter ${filterShow ? "show" : ""}`}>
             <div className="off">
-              <a onClick={() => setFilterShow(!filterShow)}>X</a>
-            </div>
+              <a onClick={() => setFilterShow(!filterShow)}><IoIosCloseCircle size={20} /></a>
+            </div> 
             <div className="search-ctn">
               <h1>Search Products</h1>
               <div className="search-bar">
