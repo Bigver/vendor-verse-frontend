@@ -56,7 +56,14 @@ const CartPage = () => {
     });
   };
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleSubmit = async () => {
+    if (isSubmitting) {
+      toast.warning("กรุณารอสักครู่");
+      return
+    }; // ป้องกันการส่งซ้ำ
+    setIsSubmitting(true); // ตั้งค่าเป็นกำลังส่ง
     const newArray = cartItems.map((item: any) => ({
       id: item.id,
       name: item.name,

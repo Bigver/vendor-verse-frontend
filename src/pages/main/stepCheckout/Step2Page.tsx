@@ -127,7 +127,7 @@ const PaymentPage: React.FC = () => {
                 <h3>ธนาคารกสิกรไทบ</h3>
               </div>
               <div className="text-1">
-                <h1>144130459</h1>
+                <h1>1441304591</h1>
                 <u />
                 <h1>ฐิติพงศ์ โนจ๊ะ</h1>
               </div>
