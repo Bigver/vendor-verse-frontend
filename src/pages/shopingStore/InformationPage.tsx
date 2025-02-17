@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import Navbar from '../../components/shopingStore/Navbar/Navbar'
 import Swal from 'sweetalert2'
 import Footer from '../../components/shopingStore/Footer/Footer'
@@ -35,7 +35,7 @@ const Information = () => {
 
   const checkOut = async (e: any) => {
     e.preventDefault();
-    const total = cartItems.reduce((total: any, item: any) => total + item.quantity * item.price,0);
+    const total = cartItems.reduce((total: any, item: any) => total + item.quantity * item.price, 0);
     const totalPrice = total + data.shipping.price
 
     const newArray = cartItems.map((item: any) => ({
@@ -103,7 +103,7 @@ const Information = () => {
   return (
     <div style={{ fontFamily: data.font }}>
       <Navbar logo={data.navbar.logo} category={data.category} link={data.name_store} color={data.navbar.text_color} template={data.navbar.template} background={data.navbar.background_color} />
-      <div className="information-ctn" style={{marginBottom : '150px' , marginTop : '150px'}}>
+      <div className="information-ctn" style={{ marginBottom: '150px', marginTop: '150px' }}>
         <form onSubmit={checkOut}>
           <h1>กรอกข้อมูลเพื่อทำการจัดส่งสินค้า</h1>
 
@@ -141,6 +141,24 @@ const Information = () => {
             onChange={handleChange}
             required
           />
+          {data.shipping.bank_name && data.shipping.bank_number && data.shipping.bank_fullname ?
+            <>
+              <div style={{ fontWeight: 'bolder' }}>
+                <label> ธนาคาร {data.shipping.bank_name} </label>
+                <label> เลขบัญชี {data.shipping.bank_number}</label>
+              </div>
+              <label style={{ fontWeight: 'bolder' }}>ชื่อ {data.shipping.bank_fullname}</label>
+            </>
+            :
+            <>
+              <div style={{ fontWeight: 'bolder' }}>
+                <label> ธนาคารกสิกรไทย </label>
+                <label>เลขบัญชี 65xxxxxxxx</label>
+              </div>
+              <label style={{ fontWeight: 'bolder' }}>ชื่อ กรุณาเพิ่มบัญชี xxxxxx</label>
+            </>}
+
+
 
           <label htmlFor="slip">สลิปการโอนเงิน</label>
           <input
@@ -153,7 +171,7 @@ const Information = () => {
         </form>
       </div>
       <Footer logo={data.navbar.logo} category={data.category} link={data.name_store} link_contact={[data.section6.link_facebook, data.section6.link_instragram, data.section6.link_line]} detail={data.footer.detail_footer} template={data.footer.template} color={data.footer.text_color} background={data.footer.background_color} />
-      </div>
+    </div>
   )
 }
 
