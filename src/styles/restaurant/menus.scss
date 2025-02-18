@@ -6,8 +6,9 @@
     padding-bottom: 60px;
     gap: 1.5rem;
     min-height: 30vh;
-    .menu-card{
+    border: 1px solid red;
 
+    .menu-card{
         scale: 0.9;
         transition: 1s;
         background-color: #f0efef;
@@ -28,6 +29,7 @@
             display: grid;
             gap: 1rem;
             padding: 10px;
+            height: 90px;
             h1{
                 word-wrap: break-word;
                 white-space: normal;
