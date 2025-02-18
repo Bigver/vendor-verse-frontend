@@ -48,7 +48,7 @@ const Template3: React.FC<ContentProps> = ({ link, store_id, category, title, de
   return (
     <div className='template-3-restaurant' style={{ paddingBottom: '50px' }}>
       <div className="header">
-        <div className="text">
+        <div className="text-1">
           <h3>{title}</h3>
           <h1>{detail}</h1>
         </div>

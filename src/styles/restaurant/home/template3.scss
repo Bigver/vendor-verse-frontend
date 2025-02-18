@@ -3,10 +3,12 @@
     .header{
         height: 30vh;
         width: 100%;
-        padding: 20px;
         display: grid;
         text-align: start;
-
+        .text-1{
+            margin-left: 5%;
+            margin-top: 5%;
+        }
         h1{
             font-weight: bolder;
             letter-spacing: 1px;
@@ -14,6 +16,7 @@
         .search{
             display: flex;
             width: 100%;
+            justify-content: center;
             input{
                 width: 75%;
                 border: 1px solid rgb(184, 181, 181);
