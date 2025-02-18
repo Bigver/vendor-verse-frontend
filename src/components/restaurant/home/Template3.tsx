@@ -60,7 +60,7 @@ const Template3: React.FC<ContentProps> = ({ link, store_id, category, title, de
       {category_template === 1 ?
         <div className="container">
           <div className={`item ${categoryActive === "all" ? 'active' : ''}`} ><a onClick={() => setCategoryActive(`all`)}>ทั้งหมด</a></div>
-          {category.map((item: any , index) => (
+          {category.map((item: any, index) => (
             <div key={index} className={`item ${categoryActive === item ? 'active' : ''}`}>
               <a onClick={() => setCategoryActive(`${item}`)}>{item}</a>
             </div>
@@ -69,7 +69,7 @@ const Template3: React.FC<ContentProps> = ({ link, store_id, category, title, de
         <div className="container2">
           <div className={`item2 ${categoryActive === "all" ? 'active' : ''}`} >
             <div className="img">
-              <img src="https://cdn-icons-png.freepik.com/256/2276/2276931.png?ga=GA1.1.753019484.1708109519&semt=ais_hybrid" alt="" />
+              <img src="https://res.cloudinary.com/daiu8h0ep/image/upload/v1739868070/alfnj87h3tpwohkpkj9c.png" alt="" />
             </div>
             <a onClick={() => setCategoryActive(`all`)}>ทั้งหมด</a>
           </div>
@@ -82,7 +82,7 @@ const Template3: React.FC<ContentProps> = ({ link, store_id, category, title, de
             </div>
           ))}
         </div>}
-      {loading ? <Loading/> :
+      {loading ? <Loading /> :
         <div className='menus-ctn'>
           {filteredProducts.map((item: any) => (
             <Menu link={link} image={item.product_img} name={item.name} price={item.price} id={item.id} />
